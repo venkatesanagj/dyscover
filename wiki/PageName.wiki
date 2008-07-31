@@ -1,0 +1,9 @@
+#labels GanttChart,Dyscover,TexttoSpeech,Learning
+Gantt chart of modules "Text to Speech" & Learning
+
+= Introduction =
+This is gantt chart of the two modules of this project that we have scheduled.
+
+= Details =
+
+http://www.flickr.com/photos/29151967@N06/2719963358
