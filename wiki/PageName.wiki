@@ -1,5 +1,5 @@
 #labels GanttChart,Dyscover,TexttoSpeech,Learning
-Gantt chart of modules "Text to Speech" & Learning
+Gantt chart of modules TTS & Learning
 
 = Introduction =
 This is gantt chart of the two modules of this project that we have scheduled.
