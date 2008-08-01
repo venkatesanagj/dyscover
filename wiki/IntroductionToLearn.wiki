@@ -1,5 +1,5 @@
-#summary * LNF *
-#labels LNF,LearnToFun,LearnNFun
+#summary "LNF"
+#labels LNF,LearnNFun,LearnToFun
 
 = _*IntroWithAphasNNum*_=
 
