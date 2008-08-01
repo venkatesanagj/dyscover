@@ -11,4 +11,4 @@
  || Stubs(small code)                   || 15-16 Aug      ||
  || Learning NetBeans                   || 24-28 Aug      ||
  || Coding                              || 29 Aug-10 Sept ||
- || Itegration                          || 11-14 Sept     ||
+ || Integration                          || 11-14 Sept     ||
