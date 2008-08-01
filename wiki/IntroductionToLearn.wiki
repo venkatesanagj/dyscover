@@ -1,4 +1,4 @@
-#summary *LearnNFun*
+#summary * LearnNFun *
 
 = _*IntroWithAphasNNum*_=
 
