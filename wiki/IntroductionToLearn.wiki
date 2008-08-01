@@ -1,8 +1,9 @@
-#summary * LearnNFun *
+#summary * LNF *
+#labels LNF,LearnToFun,LearnNFun
 
 = _*IntroWithAphasNNum*_=
 
-The LearnNFun System is for all those sweet kids around the world which help them in learning the *ALPHABETS* and *NUMBERS & COUNTING* in the fun way.
+The LearnNFun(LNF) System is for all those sweet kids around the world which help them in learning the *ALPHABETS* and *NUMBERS & COUNTING* in the fun way.
 
   *  Introduction to Alphabet with its appropriate picture.
   *  Introduction to Number with the counting of Number.
