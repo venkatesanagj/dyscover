@@ -1,4 +1,4 @@
-#labels TTS,TTSAPI,TTS
+#labels TTS,TTSAPI,API
 These are the API's of TTS module 
 
 = Introduction =
