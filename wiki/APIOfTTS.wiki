@@ -18,3 +18,5 @@ These are the functions of different processes working in the background of the 
   * *recognizeSpace()*:- This function will recognize the space between two words of the sentense.Only one space is allowed in between two words,more spaces will be considered as the end of the statement & system will not read the words following that spaces.
 
   * *recognizeDot()*:- This function will recognize the "Dot" character in the sentense that will be either acting as a special character in the sentense like in the e-mail address piyubharati@gmail.com or as a full stop to indicate the end of the statement.
+
+  * *recognizeEnd()*:- This function will recognize the end of the statement either by full stop or by more than one space in two words.
