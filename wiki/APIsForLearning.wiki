@@ -11,7 +11,7 @@
   * * showImage( )*:- The function that the image is retrieved from the database & is 
                      displayed on the screen.
 
-  * * speech( )*:- By this function retrievs the appropriate pronounciation of the alphabet
+  * * speech( )*:- By this function retrieves the appropriate pronounciation of the alphabet
                    and number.
  
   * * displayWord( )*:- It display the word starting from the alphabet and number.
