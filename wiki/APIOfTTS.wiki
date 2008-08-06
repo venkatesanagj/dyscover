@@ -14,6 +14,8 @@ These are the functions of different processes working in the background of the 
 
   * *retrieveImage()*:- Retrives the appropriate objects image for some of the words like Fruits,Vehicles etc. for better introduction of the child to the word from the database.
 
+  * *retrieveSynonymous()*:- Retrieves the synonymous of the word if any in the table.
+
   * *Speak()*:- By this function the result of the retrieveSound() method will be available to the actual user in terms of sound .
 
   * *displayImage()*:- By this function the image that is retrieved from the database in the retrieveImage() method is displayed on the screen.
