@@ -16,7 +16,13 @@ These are the functions of different processes working in the background of the 
 
   * *retrieveSynonymous()*:- Retrieves the synonymous of the word if any in the table.
 
-  * *Speak()*:- By this function the result of the retrieveSound() method will be available to the actual user in terms of sound .
+  * *Play()*:- By this function the result of the retrieveSound() method will be available to the actual user in terms of sound .
+
+  * *Stop()*:- By this function the TTS player will be stopped.
+
+  * *Pause()*:- By this function the TTS player will be paused for some time.
+
+  * *Clear()*:- By this function the text field will be cleared.
 
   * *displayImage()*:- By this function the image that is retrieved from the database in the retrieveImage() method is displayed on the screen.
 
