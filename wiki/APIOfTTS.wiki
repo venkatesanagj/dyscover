@@ -8,6 +8,8 @@ These are the functions of different processes working in the background of the 
 *API's*
   * *getText()*:- Retrieve/Recognize the user entered text & generate a request to the database.
 
+  * *recognizeType()*:- This function will recognize whether the entered text is number,character,special character,a word or a sentence.
+
   * *retrieveSound()*:- Retrieves the appropriate pronounciation of the word or character in the response to the user request from the database.
 
   * *retrieveImage()*:- Retrives the appropriate objects image for some of the words like Fruits,Vehicles etc. for better introduction of the child to the word from the database.
