@@ -1,7 +1,7 @@
 #summary API's for Learning
 #labels LNF,LearnNFun
 
-= Introduction =
+= API's =
 
   * * getAlphabet( )*:-Retrieve the user entered alphabet & generate a request to 
                       the database.
