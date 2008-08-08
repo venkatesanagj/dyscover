@@ -23,3 +23,21 @@
   * * setAlphabet( )* :-Returns/set the alphabet enetered by the the user.
 
   * * setNumber( )*:- Returns/set the number enetered by the the user.
+  
+  * *Start()*:- This function will start its process upto the end of alphabet page or 
+                the number page.
+
+  * *Next()*:-By this function the system will take next page for alphabet or number.
+ 
+  * *Stop()*:-By this function system will stop its process at some of the alphabet 
+                or number or at the end of the process.
+  
+  * *Repeat()*:-By this function the system will restart its process from the starting.
+
+  * *Back()*:- This function will take it back to the previous alphabet or number 
+               from where it will start again.
+
+  * *Alphabet()*:- This function will take the process to the alphabet page.
+
+  * *Number()*:- This function will take the process to the number page. 
+                  
