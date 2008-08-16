@@ -1,5 +1,5 @@
 #labels ClassTTS,UseCaseTTS,TTS,Text2Speech
-#These are the different UML diagrams of the TTS module.
+These are the different UML diagrams of the TTS module.
 
 = Introduction =
 
