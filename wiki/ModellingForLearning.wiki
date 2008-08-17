@@ -1,5 +1,4 @@
-#summary One-sentence summary of this page.
-
+#summary Diagrams fo-CLASS-USECASE-SEQUENCE
 = MODELLING =
 
   * *CLASS* = http://www.flickr.com/photos/29611984@N02/2769409915
