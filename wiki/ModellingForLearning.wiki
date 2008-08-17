@@ -2,7 +2,7 @@
 
 = MODELLING =
 
-  * *CLASS* =
+  * *CLASS* = http://www.flickr.com/photos/29611984@N02/2769409915
  
   * *USECASE* = http://www.flickr.com/photos/29611984@N02/2769386027
  
