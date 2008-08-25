@@ -1,7 +1,7 @@
 #summary Diagrams fo-CLASS-USECASE-SEQUENCE
 = MODELLING =
 
-  * *CLASS* = http://www.flickr.com/photos/29611984@N02/2769513989
+  * *CLASS* = http://www.flickr.com/photos/29611984@N02/2797160820
  
   * *USECASE* = http://www.flickr.com/photos/29611984@N02/2769513995
  
