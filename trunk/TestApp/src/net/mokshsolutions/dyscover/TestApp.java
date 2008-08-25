@@ -75,10 +75,10 @@ public class TestApp extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void displayButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_displayButtonActionPerformed
-        ImageIcon ic = new ImageIcon("C:\\apple.jpg");
-        Image img = ic.getImage().getScaledInstance(imageLabel.getWidth(), imageLabel.getHeight(), Image.SCALE_AREA_AVERAGING);
-        ImageIcon ic1 = new ImageIcon(img);
-        imageLabel.setIcon(ic1);
+        ImageIcon tempIcon = new ImageIcon("C:\\apple.jpg");
+        Image image = tempIcon.getImage().getScaledInstance(imageLabel.getWidth(), imageLabel.getHeight(), Image.SCALE_AREA_AVERAGING);
+        ImageIcon icon = new ImageIcon(image);
+        imageLabel.setIcon(icon);
 }//GEN-LAST:event_displayButtonActionPerformed
 
     /**
