@@ -1,7 +1,9 @@
 package tts;
 
 //import java.util.Locale.;
+import java.io.DataInputStream;
 import java.io.File;
+import java.io.FileInputStream;
 import java.util.Locale;
 import javax.speech.synthesis.Synthesizer;
 import javax.swing.JFileChooser;
@@ -367,8 +369,40 @@ JFileChooser fd = new JFileChooser();
             {
                 selectedFile = fd.getSelectedFile(); // where this is a class field
                 String fileName = selectedFile.getName();
-              TextArea.setText(fileName);
-            }
+                String filePath=selectedFile.getPath();
+              try
+			{
+                                // Open the file that is the first 
+                                // command line parameter
+                                FileInputStream fstream = new 
+					FileInputStream(filePath);
+
+                                // Convert our input stream to a
+                                // DataInputStream
+				DataInputStream in = 
+                                        new DataInputStream(fstream);
+
+                                // Continue to read lines while 
+                                // there are still some left to read
+                               while (in.available() !=0)
+				{
+                                        // Print file line to screen
+					TextArea.setText(in.readLine());
+				} 
+
+				in.close();
+			} 
+                        catch (Exception e)
+			{
+				System.err.println("File input error");
+			}
+		
+              
+	}
+
+
+
+            
             
 
 // TODO add your handling code here:
