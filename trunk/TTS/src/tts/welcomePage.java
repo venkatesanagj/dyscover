@@ -5,10 +5,6 @@ import java.io.File;
 import java.util.Locale;
 import javax.speech.synthesis.Synthesizer;
 import javax.swing.JFileChooser;
-import javax.swing.JScrollPane;
-import javax.swing.JTabbedPane;
-import javax.swing.JTextArea;
-//import javax.swing.JTextPane;
 import javax.swing.event.UndoableEditEvent;
 import javax.swing.event.UndoableEditListener;
 import javax.swing.text.Document;
@@ -16,6 +12,7 @@ import javax.swing.undo.CannotRedoException;
 import javax.swing.undo.CannotUndoException;
 import javax.swing.undo.UndoManager;
 import tts.welcomePage;
+
 
 
 
@@ -34,7 +31,9 @@ public class welcomePage extends javax.swing.JFrame {
     private Object cmd;
     private Object selectionfc;
     private UndoManager undo;
-    JTabbedPane p1;
+  //  JTabbedPane p1;
+    private Object clipboard;
+    private Object clipBoard;
     
     /** Creates new form welcomePage */
     public welcomePage() {
@@ -71,7 +70,6 @@ public class welcomePage extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         File = new javax.swing.JMenu();
         FileOpen = new javax.swing.JMenuItem();
-        FileSave = new javax.swing.JMenuItem();
         FileExit = new javax.swing.JMenuItem();
         Edit = new javax.swing.JMenu();
         EditUndo = new javax.swing.JMenuItem();
@@ -151,9 +149,6 @@ public class welcomePage extends javax.swing.JFrame {
             }
         });
         File.add(FileOpen);
-
-        FileSave.setText("Save");
-        File.add(FileSave);
 
         FileExit.setText("Exit");
         FileExit.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -298,8 +293,7 @@ public class welcomePage extends javax.swing.JFrame {
 
     @SuppressWarnings("static-access")
 private void PlayBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PlayBActionPerformed
-       //String str= TextArea.getText();
-        Synthesizer synth;
+               Synthesizer synth;
  try
         {  
 String str=new String(TextArea.getText());
@@ -408,9 +402,8 @@ try {
 }//GEN-LAST:event_EditRedoActionPerformed
 
 private void EditCutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EditCutActionPerformed
-JScrollPane scrollPane = (JScrollPane)p1.getSelectedComponent();
-	JTextArea textArea = (JTextArea)scrollPane.getViewport().getView();
-	textArea.cut();// TODO add your handling code here:
+TextArea.cut();
+    // TODO add your handling code here:
 }//GEN-LAST:event_EditCutActionPerformed
 
 private void EditSelectAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EditSelectAllActionPerformed
@@ -418,18 +411,18 @@ TextArea.selectAll();// TODO add your handling code here:
 }//GEN-LAST:event_EditSelectAllActionPerformed
 
 private void EditCopyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EditCopyActionPerformed
-JScrollPane scrollPane = (JScrollPane)p1.getSelectedComponent();
-	JTextArea textArea = (JTextArea)scrollPane.getViewport().getView();
-	textArea.copy();// TODO add your handling code here:
+TextArea.copy();
+// TODO add your handling code here:
 }//GEN-LAST:event_EditCopyActionPerformed
 
 private void EditPasteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EditPasteActionPerformed
-JScrollPane scrollPane = (JScrollPane)p1.getSelectedComponent();
-	JTextArea textArea = (JTextArea)scrollPane.getViewport().getView();
-	textArea.paste();// TODO add your handling code here:
+TextArea.paste();
+// TODO add your handling code here:
 }//GEN-LAST:event_EditPasteActionPerformed
 
 private void OptionPEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OptionPEActionPerformed
+setVisible(false);
+new PronunciationEditor().setVisible(true);
 // TODO add your handling code here:
 }//GEN-LAST:event_OptionPEActionPerformed
 
@@ -456,7 +449,6 @@ private void OptionPEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     private javax.swing.JMenu File;
     private javax.swing.JMenuItem FileExit;
     private javax.swing.JMenuItem FileOpen;
-    private javax.swing.JMenuItem FileSave;
     private javax.swing.JMenu Help;
     private javax.swing.JLabel ImageDis;
     private javax.swing.JMenu Option;
