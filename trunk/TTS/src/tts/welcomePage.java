@@ -363,6 +363,8 @@ System.exit(0);// TODO add your handling code here:
 
 private void FileOpenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FileOpenActionPerformed
 JFileChooser fd = new JFileChooser();
+String data="";
+String data1="";
             int result = fd.showDialog(null, "Select any document");
         File selectedFile;
             if (result == JFileChooser.APPROVE_OPTION)
@@ -387,7 +389,9 @@ JFileChooser fd = new JFileChooser();
                                while (in.available() !=0)
 				{
                                         // Print file line to screen
-					TextArea.setText(in.readLine());
+                              data=(in.readLine());
+                                data1=data1+data;
+					TextArea.setText(data1);
 				} 
 
 				in.close();
