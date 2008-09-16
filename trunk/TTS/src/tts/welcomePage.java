@@ -1,11 +1,10 @@
 package tts;
 
-//import java.util.Locale.;
+import com.sun.speech.freetts.Voice;
+import com.sun.speech.freetts.VoiceManager;
 import java.io.DataInputStream;
 import java.io.File;
 import java.io.FileInputStream;
-import java.util.Locale;
-import javax.speech.synthesis.Synthesizer;
 import javax.swing.JFileChooser;
 import javax.swing.event.UndoableEditEvent;
 import javax.swing.event.UndoableEditListener;
@@ -24,34 +23,25 @@ import tts.welcomePage;
  * @author  karekar
  */
 public class welcomePage extends javax.swing.JFrame {
-
-    
-
-    
-    private String Word;
+        private String Word;
     private Object[] arr;
     private Object cmd;
     private Object selectionfc;
     private UndoManager undo;
-  //  JTabbedPane p1;
-    private Object clipboard;
+     private Object clipboard;
     private Object clipBoard;
     
     /** Creates new form welcomePage */
     public welcomePage() {
-        initComponents();
-       
+        initComponents();       
         undo = new UndoManager();
   Document doc = TextArea.getDocument();
   doc.addUndoableEditListener(new UndoableEditListener() {
   public void undoableEditHappened(UndoableEditEvent evt) {
-  undo.addEdit(evt.getEdit());
- 
+  undo.addEdit(evt.getEdit()); 
   }
     });
-    }
-
-   
+    } 
    
    /* initialize the form.
      * WARNING: Do NOT Modify this code. The content of this method is
@@ -295,72 +285,40 @@ public class welcomePage extends javax.swing.JFrame {
 
     @SuppressWarnings("static-access")
 private void PlayBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PlayBActionPerformed
-               Synthesizer synth;
- try
-        {  
-String str=new String(TextArea.getText());
-            synth = (Synthesizer) Central.createSynthesizer(new SynthesizerModeDesc(null,"general",Locale.ENGLISH,null,null));
-            synth.allocate();
-            synth.resume();
-            synth.speakPlainText(str, null);
-            synth.waitEngineState(Synthesizer.QUEUE_EMPTY);
-            synth.deallocate();
-        }
-        catch (Exception e) { e.printStackTrace(); }//str.FreeTTSSpeakable();
+        speek(); 
 
-
-		
-	}
-
-
-      
-
-    private void play() {
-        throw new UnsupportedOperationException("Not yet implemented");
-           
-// TODO add your handling code here:
+   
 }//GEN-LAST:event_PlayBActionPerformed
 private void SynBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SynBActionPerformed
-
-        
-            
+             
 // TODO add your handling code here:
-       
+     
 // TODO add your handling code here:
 }//GEN-LAST:event_SynBActionPerformed
 
 private void ClearBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ClearBActionPerformed
 TextArea.setText("");
 SynBox.removeAllItems();
-
-
 // TODO add your handling code here:
 }//GEN-LAST:event_ClearBActionPerformed
-
 private void PauseBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PauseBActionPerformed
-synth.deallocate();// TODO add your handling code here:
+// TODO add your handling code here:
 }//GEN-LAST:event_PauseBActionPerformed
-
 private void FileOpenMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FileOpenMouseClicked
     // TODO add your handling code here:
 }//GEN-LAST:event_FileOpenMouseClicked
-
 private void FileExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FileExitMouseClicked
 //TODO add your handling code here:;
 }//GEN-LAST:event_FileExitMouseClicked
-
 private void FileMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FileMouseClicked
     // TODO add your handling code here:
 }//GEN-LAST:event_FileMouseClicked
-
 private void OptionPEMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OptionPEMouseClicked
  // TODO add your handling code here:;
 }//GEN-LAST:event_OptionPEMouseClicked
-
 private void FileExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FileExitActionPerformed
 System.exit(0);// TODO add your handling code here:
 }//GEN-LAST:event_FileExitActionPerformed
-
 private void FileOpenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FileOpenActionPerformed
 JFileChooser fd = new JFileChooser();
 String data="";
@@ -502,10 +460,19 @@ new PronunciationEditor().setVisible(true);
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 
+    private void speek()
+    {
+       String str=new String(TextArea.getText());
+        
+        VoiceManager voiceManager = VoiceManager.getInstance();
+              Voice helloVoice = voiceManager.getVoice("kevin16");
+               helloVoice.allocate();
+               helloVoice.speak(str);
+               helloVoice.deallocate();
+    }
+
    
-  /*  private void play1() {
-        throw new UnsupportedOperationException("Not yet implemented");
-    }*/
+ 
    }
 
 
