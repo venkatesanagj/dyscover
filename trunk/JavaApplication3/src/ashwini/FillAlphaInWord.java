@@ -6,16 +6,28 @@
 
 package ashwini;
 
+import javax.swing.JTextField;
+
 /**
  *
  * @author  Preeti
  */
 public class FillAlphaInWord extends javax.swing.JFrame {
-
+JTextField[] jtf=new JTextField[2];
+String word[]={"1","2"};
     /** Creates new form FillAlphaInWord */
     public FillAlphaInWord() {
         initComponents();
+        for(int i=0;i<=1;i++){
+        jtf[i]=new JTextField(5);
+        jPanel1.add(jtf[i]);
+        String s=String.valueOf(word[i]);
+        jtf[i].setText(s);
+        
+        }
     }
+
+    
 
     /** This method is called from within the constructor to
      * initialize the form.
@@ -27,20 +39,9 @@ public class FillAlphaInWord extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        stf = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
-        jTextField12 = new javax.swing.JTextField();
         check = new javax.swing.JButton();
         blanklabel = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -52,80 +53,6 @@ public class FillAlphaInWord extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Arial Rounded MT Bold", 2, 18));
         jLabel1.setForeground(new java.awt.Color(255, 0, 0));
         jLabel1.setText("FILL THE PROPER LETTER");
-
-        jTextField1.setBackground(new java.awt.Color(153, 153, 153));
-        jTextField1.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14));
-        jTextField1.setForeground(new java.awt.Color(0, 0, 255));
-        jTextField1.setText("     BAT");
-        jTextField1.setToolTipText("");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-
-        stf.setBackground(new java.awt.Color(153, 153, 153));
-        stf.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14));
-        stf.setForeground(new java.awt.Color(204, 0, 204));
-        stf.setText("    R B IT");
-        stf.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                stfActionPerformed(evt);
-            }
-        });
-
-        jTextField3.setBackground(new java.awt.Color(153, 153, 153));
-        jTextField3.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14));
-        jTextField3.setForeground(new java.awt.Color(255, 0, 0));
-        jTextField3.setText("  APPLE");
-
-        jTextField4.setBackground(new java.awt.Color(153, 153, 153));
-        jTextField4.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14));
-        jTextField4.setForeground(new java.awt.Color(255, 0, 255));
-        jTextField4.setText("   JOKER");
-
-        jTextField5.setBackground(new java.awt.Color(153, 153, 153));
-        jTextField5.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14));
-        jTextField5.setText("     KITE");
-        jTextField5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField5ActionPerformed(evt);
-            }
-        });
-
-        jTextField6.setBackground(new java.awt.Color(153, 153, 153));
-        jTextField6.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14));
-        jTextField6.setForeground(new java.awt.Color(255, 51, 51));
-        jTextField6.setText("ICE-CREAM");
-
-        jTextField7.setBackground(new java.awt.Color(153, 153, 153));
-        jTextField7.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14));
-        jTextField7.setForeground(new java.awt.Color(255, 255, 0));
-        jTextField7.setText("     VAN");
-
-        jTextField8.setBackground(new java.awt.Color(153, 153, 153));
-        jTextField8.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14));
-        jTextField8.setForeground(new java.awt.Color(0, 102, 0));
-        jTextField8.setText("   ZEBRA");
-
-        jTextField9.setBackground(new java.awt.Color(153, 153, 153));
-        jTextField9.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14));
-        jTextField9.setForeground(new java.awt.Color(255, 0, 255));
-        jTextField9.setText("    LION");
-
-        jTextField10.setBackground(new java.awt.Color(153, 153, 153));
-        jTextField10.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14));
-        jTextField10.setForeground(new java.awt.Color(0, 0, 255));
-        jTextField10.setText("    DOG");
-
-        jTextField11.setBackground(new java.awt.Color(153, 153, 153));
-        jTextField11.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14));
-        jTextField11.setForeground(new java.awt.Color(255, 0, 0));
-        jTextField11.setText("   PENCIL");
-
-        jTextField12.setBackground(new java.awt.Color(153, 153, 153));
-        jTextField12.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14));
-        jTextField12.setText("   SHOES");
 
         check.setBackground(new java.awt.Color(0, 0, 204));
         check.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14));
@@ -139,6 +66,9 @@ public class FillAlphaInWord extends javax.swing.JFrame {
 
         blanklabel.setBackground(new java.awt.Color(255, 255, 255));
         blanklabel.setOpaque(true);
+
+        jPanel1.setBackground(new java.awt.Color(255, 0, 0));
+        jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jMenu1.setBackground(new java.awt.Color(153, 153, 153));
         jMenu1.setText("Option");
@@ -163,63 +93,23 @@ public class FillAlphaInWord extends javax.swing.JFrame {
                         .addGap(110, 110, 110)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField9, javax.swing.GroupLayout.DEFAULT_SIZE, 91, Short.MAX_VALUE)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.DEFAULT_SIZE, 91, Short.MAX_VALUE)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 91, Short.MAX_VALUE))
-                        .addGap(47, 47, 47)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField10)
-                            .addComponent(jTextField6)
-                            .addComponent(stf))
-                        .addGap(41, 41, 41)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField11, javax.swing.GroupLayout.DEFAULT_SIZE, 82, Short.MAX_VALUE)
-                            .addComponent(jTextField7, javax.swing.GroupLayout.DEFAULT_SIZE, 82, Short.MAX_VALUE)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.DEFAULT_SIZE, 82, Short.MAX_VALUE))
-                        .addGap(39, 39, 39)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField12, javax.swing.GroupLayout.DEFAULT_SIZE, 84, Short.MAX_VALUE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jTextField8)
-                                .addComponent(jTextField4, javax.swing.GroupLayout.DEFAULT_SIZE, 84, Short.MAX_VALUE)))))
-                .addGap(57, 57, 57))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(108, 108, 108)
-                .addComponent(check)
-                .addGap(55, 55, 55)
-                .addComponent(blanklabel, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(216, Short.MAX_VALUE))
+                        .addGap(108, 108, 108)
+                        .addComponent(check)
+                        .addGap(55, 55, 55)
+                        .addComponent(blanklabel, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(28, 28, 28)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 369, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(42, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(22, 22, 22)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(stf, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(41, 41, 41)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(42, 42, 42)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
-                        .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(38, 38, 38)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(check)
                     .addComponent(blanklabel, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -229,27 +119,19 @@ public class FillAlphaInWord extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_jTextField1ActionPerformed
-
-private void stfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stfActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_stfActionPerformed
-
-private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_jTextField5ActionPerformed
-
 private void checkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkActionPerformed
-if(evt.getSource()==check)
+/*if(evt.getSource()==check)
 {
-    for(int i=0;i<stf.getColumns();i++)
+    String s="BAT";
+    char arr[]=s.toCharArray();
+    for(int i=0;i<arr.length;i++)
     {
-        String s=stf.getText();
-        blanklabel.setText(s);
+        if(arr[i]=='B')
+        {
+            blanklabel.setText();
+        }
     }
-}
+}*/
     // TODO add your handling code here:
 }//GEN-LAST:event_checkActionPerformed
 
@@ -272,18 +154,7 @@ if(evt.getSource()==check)
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
-    private javax.swing.JTextField stf;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 
 }

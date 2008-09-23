@@ -1,7 +1,7 @@
 /*
  * Learning.java
  *
- * Created on August 10, 2008, 10:33 PM
+ * Created on September 3, 2008, 10:34 AM
  */
 
 package ashwini;
@@ -27,54 +27,59 @@ public class Learning extends javax.swing.JFrame {
     private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
-        buttonGroup2 = new javax.swing.ButtonGroup();
-        buttonGroup3 = new javax.swing.ButtonGroup();
         jLabel1 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jLabel4 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jRadioButton4 = new javax.swing.JRadioButton();
-        jRadioButton5 = new javax.swing.JRadioButton();
-        jLabel5 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        introalpha = new javax.swing.JRadioButton();
+        fillblanksalpha = new javax.swing.JRadioButton();
+        fillblanksword = new javax.swing.JRadioButton();
         jLabel3 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        intronum = new javax.swing.JRadioButton();
+        fillblanksnum = new javax.swing.JRadioButton();
+        startbutton = new javax.swing.JButton();
+        exit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Berlin Sans FB Demi", 2, 36));
-        jLabel1.setForeground(new java.awt.Color(204, 0, 0));
-        jLabel1.setText("Learning");
+        jLabel1.setFont(new java.awt.Font("Tahoma", 2, 24));
+        jLabel1.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel1.setText("   Welcome For Learning");
 
-        buttonGroup1.add(jRadioButton1);
-        jRadioButton1.setFont(new java.awt.Font("Arial Unicode MS", 1, 12)); // NOI18N
-        jRadioButton1.setText("Introduction to Alphabets");
-        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton1ActionPerformed(evt);
-            }
-        });
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jLabel2.setForeground(new java.awt.Color(0, 102, 255));
+        jLabel2.setText("  Select any of the following option to start Learning");
 
-        buttonGroup1.add(jRadioButton2);
-        jRadioButton2.setFont(new java.awt.Font("Arial Unicode MS", 1, 12)); // NOI18N
-        jRadioButton2.setText("Fill in the blanks for capital and small letters");
+        buttonGroup1.add(introalpha);
+        introalpha.setFont(new java.awt.Font("Tahoma", 3, 14));
+        introalpha.setForeground(new java.awt.Color(255, 0, 0));
+        introalpha.setText("Introduction To Alphabets");
 
-        buttonGroup1.add(jRadioButton3);
-        jRadioButton3.setFont(new java.awt.Font("Arial Unicode MS", 1, 12)); // NOI18N
-        jRadioButton3.setText("Fill in the blanks for words");
-        jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton3ActionPerformed(evt);
-            }
-        });
+        buttonGroup1.add(fillblanksalpha);
+        fillblanksalpha.setFont(new java.awt.Font("Tahoma", 3, 14));
+        fillblanksalpha.setForeground(new java.awt.Color(255, 0, 0));
+        fillblanksalpha.setText("Fill in the blanks for Alphabet");
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 3, 14));
-        jLabel4.setForeground(new java.awt.Color(204, 0, 0));
-        jLabel4.setText("   ALPHABET");
+        buttonGroup1.add(fillblanksword);
+        fillblanksword.setFont(new java.awt.Font("Tahoma", 3, 14));
+        fillblanksword.setForeground(new java.awt.Color(255, 0, 0));
+        fillblanksword.setText("Fill in the blanks for words");
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jLabel3.setText("  Alphabets");
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jLabel4.setText("Numbers");
+
+        buttonGroup1.add(intronum);
+        intronum.setFont(new java.awt.Font("Tahoma", 3, 14));
+        intronum.setForeground(new java.awt.Color(255, 0, 0));
+        intronum.setText("Introduction to Numbers");
+
+        buttonGroup1.add(fillblanksnum);
+        fillblanksnum.setFont(new java.awt.Font("Tahoma", 3, 14));
+        fillblanksnum.setForeground(new java.awt.Color(255, 0, 0));
+        fillblanksnum.setText("Fill in the blanks for Numbers");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -83,157 +88,133 @@ public class Learning extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(44, 44, 44)
+                        .addGap(21, 21, 21)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jRadioButton1)
-                            .addComponent(jRadioButton3)
-                            .addComponent(jRadioButton2)))
+                            .addComponent(introalpha)
+                            .addComponent(fillblanksalpha)
+                            .addComponent(fillblanksword)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(intronum)
+                            .addComponent(fillblanksnum)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(54, 54, 54)
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(128, Short.MAX_VALUE))
+                        .addGap(31, 31, 31)
+                        .addComponent(jLabel4)))
+                .addContainerGap(244, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(9, 9, 9)
-                .addComponent(jRadioButton1)
+                .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jRadioButton2)
+                .addComponent(introalpha)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jRadioButton3)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(fillblanksalpha)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(fillblanksword)
+                .addGap(28, 28, 28)
+                .addComponent(jLabel4)
+                .addGap(29, 29, 29)
+                .addComponent(intronum)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(fillblanksnum)
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
-        jRadioButton4.setFont(new java.awt.Font("Arial Unicode MS", 1, 12));
-        jRadioButton4.setText(" Introduction to Numbers");
-
-        jRadioButton5.setFont(new java.awt.Font("Arial Unicode MS", 1, 12));
-        jRadioButton5.setText("Fill in the blanks from for numbers");
-        jRadioButton5.addActionListener(new java.awt.event.ActionListener() {
+        startbutton.setFont(new java.awt.Font("Arial Rounded MT Bold", 2, 18)); // NOI18N
+        startbutton.setText("START");
+        startbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton5ActionPerformed(evt);
+                startbuttonActionPerformed(evt);
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("Arial Unicode MS", 3, 14));
-        jLabel5.setForeground(new java.awt.Color(204, 0, 0));
-        jLabel5.setText("  NUMBER");
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jRadioButton5)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jRadioButton4))
-                .addContainerGap(192, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(11, 11, 11)
-                .addComponent(jLabel5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jRadioButton4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jRadioButton5)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        jButton1.setBackground(new java.awt.Color(255, 0, 51));
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 14));
-        jButton1.setText("START");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        exit.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        exit.setText("Exit");
+        exit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                exitActionPerformed(evt);
             }
         });
-
-        jLabel2.setFont(new java.awt.Font("Arial Rounded MT Bold", 2, 18));
-        jLabel2.setForeground(new java.awt.Color(0, 0, 204));
-        jLabel2.setText("                    Welcome  to  DYSCOVER");
-
-        jLabel3.setFont(new java.awt.Font("Arial Rounded MT Bold", 2, 18));
-        jLabel3.setForeground(new java.awt.Color(0, 0, 204));
-        jLabel3.setText("     To start Learning click any of the following option");
-
-        jButton2.setBackground(new java.awt.Color(255, 0, 153));
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 14));
-        jButton2.setText("EXIT");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(358, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(261, 261, 261))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(215, 215, 215)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 353, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(203, Short.MAX_VALUE))
+                .addContainerGap(121, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(102, 102, 102))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(186, Short.MAX_VALUE)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 482, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(103, 103, 103))
+                .addContainerGap(100, Short.MAX_VALUE)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(72, 72, 72))
             .addGroup(layout.createSequentialGroup()
-                .addGap(297, 297, 297)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(249, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(171, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(117, 117, 117))
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(131, 131, 131)
+                .addComponent(startbutton)
+                .addGap(33, 33, 33)
+                .addComponent(exit, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(166, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3)
-                .addGap(18, 18, 18)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(11, 11, 11)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(61, 61, 61)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
-                .addContainerGap())
+                    .addComponent(startbutton)
+                    .addComponent(exit))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-private void jRadioButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton5ActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_jRadioButton5ActionPerformed
+private void startbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startbuttonActionPerformed
+    if(introalpha.isSelected())
+    {
+        setVisible(false);
+        new IntroToAlphas().setVisible(true);
+    }
+    if(fillblanksalpha.isSelected())
+    {
+        setVisible(false);
+        new FillAlpha().setVisible(true);
+    }
+    if(fillblanksword.isSelected())
+    {
+        setVisible(false);
+        new FillAlphaInWord().setVisible(true);
+    }
+    if(intronum.isSelected())
+    {
+        setVisible(false);
+        new IntroToNum().setVisible(true);
+    }
+    if(fillblanksnum.isSelected())
+    {
+        setVisible(false);
+        new FillNumber().setVisible(true);
+    }
+    
+        // TODO add your handling code here:
+}//GEN-LAST:event_startbuttonActionPerformed
 
-private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_jRadioButton3ActionPerformed
+private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
 
-private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+//setVisible(false);
+//new ThankYou().setVisible(true);
+System.exit(0);
 // TODO add your handling code here:
-   
-}//GEN-LAST:event_jButton1ActionPerformed
-
-private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_jRadioButton1ActionPerformed
+}//GEN-LAST:event_exitActionPerformed
 
     /**
     * @param args the command line arguments
@@ -242,29 +223,24 @@ private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Learning().setVisible(true);
-              //  new IntroToAlpha().setVisible(false);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.ButtonGroup buttonGroup2;
-    private javax.swing.ButtonGroup buttonGroup3;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton exit;
+    private javax.swing.JRadioButton fillblanksalpha;
+    private javax.swing.JRadioButton fillblanksnum;
+    private javax.swing.JRadioButton fillblanksword;
+    private javax.swing.JRadioButton introalpha;
+    private javax.swing.JRadioButton intronum;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
-    private javax.swing.JRadioButton jRadioButton5;
+    private javax.swing.JButton startbutton;
     // End of variables declaration//GEN-END:variables
 
 }
