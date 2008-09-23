@@ -88,7 +88,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                   <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="1521" max="32767" attributes="0"/>
+                  <EmptySpace pref="1533" max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
@@ -289,6 +289,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Hh"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="HWordActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="KWord">
               <Properties>
@@ -314,6 +317,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Ll"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="LWordActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="JWord">
               <Properties>
@@ -339,6 +345,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Mm"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MWordActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
@@ -358,21 +367,21 @@
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="RWord" min="-2" pref="60" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton19" min="-2" pref="64" max="-2" attributes="0"/>
+                      <Component id="S" min="-2" pref="64" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton20" min="-2" pref="60" max="-2" attributes="0"/>
+                      <Component id="T" min="-2" pref="60" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton21" min="-2" pref="60" max="-2" attributes="0"/>
+                      <Component id="U" min="-2" pref="60" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jButton22" min="-2" pref="63" max="-2" attributes="0"/>
+                      <Component id="V" min="-2" pref="63" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jButton23" min="-2" max="-2" attributes="0"/>
+                      <Component id="W" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jButton24" min="-2" pref="59" max="-2" attributes="0"/>
+                      <Component id="X" min="-2" pref="59" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton25" min="-2" pref="60" max="-2" attributes="0"/>
+                      <Component id="Y" min="-2" pref="60" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton26" min="-2" pref="60" max="-2" attributes="0"/>
+                      <Component id="Z" min="-2" pref="60" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="1522" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -384,14 +393,14 @@
                           <Group type="103" alignment="1" groupAlignment="3" attributes="0">
                               <Component id="QWord" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
                               <Component id="RWord" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-                              <Component id="jButton19" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-                              <Component id="jButton20" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-                              <Component id="jButton21" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-                              <Component id="jButton22" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-                              <Component id="jButton23" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                              <Component id="jButton24" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
-                              <Component id="jButton25" alignment="3" pref="37" max="32767" attributes="0"/>
-                              <Component id="jButton26" alignment="3" pref="37" max="32767" attributes="0"/>
+                              <Component id="S" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                              <Component id="T" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                              <Component id="U" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                              <Component id="X" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
+                              <Component id="Y" alignment="3" pref="37" max="32767" attributes="0"/>
+                              <Component id="Z" alignment="3" pref="37" max="32767" attributes="0"/>
+                              <Component id="W" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
+                              <Component id="V" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
                           </Group>
                           <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                               <Component id="NWord" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
@@ -426,6 +435,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Oo"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="OWordActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="PWord">
               <Properties>
@@ -437,6 +449,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Pp"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PWordActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="QWord">
               <Properties>
@@ -448,6 +463,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Qq"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="QWordActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="RWord">
               <Properties>
@@ -463,7 +481,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RWordActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton19">
+            <Component class="javax.swing.JButton" name="S">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="33" green="ff" red="66" type="rgb"/>
@@ -473,8 +491,11 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Ss"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SActionPerformed"/>
+              </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton20">
+            <Component class="javax.swing.JButton" name="T">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="33" green="ff" red="66" type="rgb"/>
@@ -484,8 +505,11 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Tt"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TActionPerformed"/>
+              </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton21">
+            <Component class="javax.swing.JButton" name="U">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="33" green="ff" red="66" type="rgb"/>
@@ -495,8 +519,11 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Uu"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="UActionPerformed"/>
+              </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton22">
+            <Component class="javax.swing.JButton" name="V">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="0" green="ff" red="66" type="rgb"/>
@@ -506,8 +533,11 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Vv"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VActionPerformed"/>
+              </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton23">
+            <Component class="javax.swing.JButton" name="W">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="33" green="ff" red="66" type="rgb"/>
@@ -517,8 +547,11 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Ww"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="WActionPerformed"/>
+              </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton24">
+            <Component class="javax.swing.JButton" name="X">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="33" green="ff" red="66" type="rgb"/>
@@ -528,8 +561,11 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Xx"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="XActionPerformed"/>
+              </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton25">
+            <Component class="javax.swing.JButton" name="Y">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="33" green="ff" red="99" type="rgb"/>
@@ -539,8 +575,11 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Yy"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="YActionPerformed"/>
+              </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton26">
+            <Component class="javax.swing.JButton" name="Z">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="33" green="ff" red="66" type="rgb"/>
@@ -550,6 +589,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Zz"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ZActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
@@ -560,22 +602,29 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="letterlabel" min="-2" pref="419" max="-2" attributes="1"/>
-                          <Component id="wordlabel" pref="419" max="32767" attributes="1"/>
+                          <Component id="wordlabel" min="-2" pref="443" max="-2" attributes="1"/>
+                          <Component id="letterlabel" min="-2" pref="439" max="-2" attributes="1"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="imagelabel" min="-2" pref="466" max="-2" attributes="1"/>
+                      <Component id="imagelabel" min="-2" pref="420" max="-2" attributes="1"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <Component id="letterlabel" pref="251" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="imagelabel" alignment="0" min="-2" pref="312" max="-2" attributes="1"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="letterlabel" min="-2" pref="251" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="wordlabel" min="-2" pref="55" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="wordlabel" min="-2" pref="55" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="imagelabel" alignment="1" pref="312" max="32767" attributes="1"/>
               </Group>
             </DimensionLayout>
           </Layout>

@@ -7,11 +7,11 @@
 package ashwini;
 
 import java.awt.Image;
-import java.io.File;
-import java.io.FileInputStream;
+//import java.io.File;
+//import java.io.FileInputStream;
 import javax.swing.ImageIcon;
-import sun.audio.AudioPlayer;
-import sun.audio.AudioStream;
+//import sun.audio.AudioPlayer;
+//import sun.audio.AudioStream;
 
 /**
  *
@@ -54,14 +54,14 @@ public class IntroToAlphas extends javax.swing.JFrame {
         PWord = new javax.swing.JButton();
         QWord = new javax.swing.JButton();
         RWord = new javax.swing.JButton();
-        jButton19 = new javax.swing.JButton();
-        jButton20 = new javax.swing.JButton();
-        jButton21 = new javax.swing.JButton();
-        jButton22 = new javax.swing.JButton();
-        jButton23 = new javax.swing.JButton();
-        jButton24 = new javax.swing.JButton();
-        jButton25 = new javax.swing.JButton();
-        jButton26 = new javax.swing.JButton();
+        S = new javax.swing.JButton();
+        T = new javax.swing.JButton();
+        U = new javax.swing.JButton();
+        V = new javax.swing.JButton();
+        W = new javax.swing.JButton();
+        X = new javax.swing.JButton();
+        Y = new javax.swing.JButton();
+        Z = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         letterlabel = new javax.swing.JLabel();
         wordlabel = new javax.swing.JLabel();
@@ -97,7 +97,7 @@ public class IntroToAlphas extends javax.swing.JFrame {
         });
 
         CWord.setBackground(new java.awt.Color(153, 255, 0));
-        CWord.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14));
+        CWord.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14)); // NOI18N
         CWord.setText("Cc");
         CWord.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -142,7 +142,7 @@ public class IntroToAlphas extends javax.swing.JFrame {
         });
 
         IWord.setBackground(new java.awt.Color(153, 255, 51));
-        IWord.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14));
+        IWord.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14)); // NOI18N
         IWord.setText("Ii");
         IWord.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -151,11 +151,16 @@ public class IntroToAlphas extends javax.swing.JFrame {
         });
 
         HWord.setBackground(new java.awt.Color(153, 255, 0));
-        HWord.setFont(new java.awt.Font("Arial Narrow", 1, 14));
+        HWord.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         HWord.setText("Hh");
+        HWord.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HWordActionPerformed(evt);
+            }
+        });
 
         KWord.setBackground(new java.awt.Color(153, 255, 51));
-        KWord.setFont(new java.awt.Font("Arial Narrow", 1, 14));
+        KWord.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         KWord.setText("Kk");
         KWord.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -164,8 +169,13 @@ public class IntroToAlphas extends javax.swing.JFrame {
         });
 
         LWord.setBackground(new java.awt.Color(153, 255, 0));
-        LWord.setFont(new java.awt.Font("Arial Narrow", 1, 14));
+        LWord.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         LWord.setText("Ll");
+        LWord.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LWordActionPerformed(evt);
+            }
+        });
 
         JWord.setBackground(new java.awt.Color(153, 255, 0));
         JWord.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14));
@@ -177,8 +187,13 @@ public class IntroToAlphas extends javax.swing.JFrame {
         });
 
         MWord.setBackground(new java.awt.Color(153, 255, 0));
-        MWord.setFont(new java.awt.Font("Arial Narrow", 1, 12));
+        MWord.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
         MWord.setText("Mm");
+        MWord.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MWordActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -235,19 +250,34 @@ public class IntroToAlphas extends javax.swing.JFrame {
         NWord.setText("Nn");
 
         OWord.setBackground(new java.awt.Color(153, 255, 51));
-        OWord.setFont(new java.awt.Font("Arial Narrow", 1, 14));
+        OWord.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         OWord.setText("Oo");
+        OWord.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OWordActionPerformed(evt);
+            }
+        });
 
         PWord.setBackground(new java.awt.Color(102, 255, 51));
-        PWord.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12));
+        PWord.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
         PWord.setText("Pp");
+        PWord.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PWordActionPerformed(evt);
+            }
+        });
 
         QWord.setBackground(new java.awt.Color(153, 255, 51));
-        QWord.setFont(new java.awt.Font("Arial Narrow", 1, 12));
+        QWord.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
         QWord.setText("Qq");
+        QWord.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QWordActionPerformed(evt);
+            }
+        });
 
         RWord.setBackground(new java.awt.Color(153, 255, 51));
-        RWord.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12));
+        RWord.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
         RWord.setText("Rr");
         RWord.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -255,37 +285,77 @@ public class IntroToAlphas extends javax.swing.JFrame {
             }
         });
 
-        jButton19.setBackground(new java.awt.Color(102, 255, 51));
-        jButton19.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12));
-        jButton19.setText("Ss");
+        S.setBackground(new java.awt.Color(102, 255, 51));
+        S.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
+        S.setText("Ss");
+        S.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SActionPerformed(evt);
+            }
+        });
 
-        jButton20.setBackground(new java.awt.Color(102, 255, 51));
-        jButton20.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12));
-        jButton20.setText("Tt");
+        T.setBackground(new java.awt.Color(102, 255, 51));
+        T.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
+        T.setText("Tt");
+        T.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TActionPerformed(evt);
+            }
+        });
 
-        jButton21.setBackground(new java.awt.Color(102, 255, 51));
-        jButton21.setFont(new java.awt.Font("Arial Narrow", 1, 14));
-        jButton21.setText("Uu");
+        U.setBackground(new java.awt.Color(102, 255, 51));
+        U.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
+        U.setText("Uu");
+        U.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                UActionPerformed(evt);
+            }
+        });
 
-        jButton22.setBackground(new java.awt.Color(102, 255, 0));
-        jButton22.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12));
-        jButton22.setText("Vv");
+        V.setBackground(new java.awt.Color(102, 255, 0));
+        V.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
+        V.setText("Vv");
+        V.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VActionPerformed(evt);
+            }
+        });
 
-        jButton23.setBackground(new java.awt.Color(102, 255, 51));
-        jButton23.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12));
-        jButton23.setText("Ww");
+        W.setBackground(new java.awt.Color(102, 255, 51));
+        W.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
+        W.setText("Ww");
+        W.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                WActionPerformed(evt);
+            }
+        });
 
-        jButton24.setBackground(new java.awt.Color(102, 255, 51));
-        jButton24.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14));
-        jButton24.setText("Xx");
+        X.setBackground(new java.awt.Color(102, 255, 51));
+        X.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14)); // NOI18N
+        X.setText("Xx");
+        X.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                XActionPerformed(evt);
+            }
+        });
 
-        jButton25.setBackground(new java.awt.Color(153, 255, 51));
-        jButton25.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12));
-        jButton25.setText("Yy");
+        Y.setBackground(new java.awt.Color(153, 255, 51));
+        Y.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
+        Y.setText("Yy");
+        Y.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                YActionPerformed(evt);
+            }
+        });
 
-        jButton26.setBackground(new java.awt.Color(102, 255, 51));
-        jButton26.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14));
-        jButton26.setText("Zz");
+        Z.setBackground(new java.awt.Color(102, 255, 51));
+        Z.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14)); // NOI18N
+        Z.setText("Zz");
+        Z.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ZActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -302,21 +372,21 @@ public class IntroToAlphas extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(RWord, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(S, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(T, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(U, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(V, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton23)
+                .addComponent(W)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(X, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Y, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton26, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Z, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1522, 1522, 1522))
         );
         jPanel3Layout.setVerticalGroup(
@@ -326,14 +396,14 @@ public class IntroToAlphas extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(QWord, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(RWord, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton25, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
-                        .addComponent(jButton26, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE))
+                        .addComponent(S, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(T, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(U, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(X, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Y, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
+                        .addComponent(Z, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
+                        .addComponent(W, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(V, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(NWord, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(OWord, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -342,7 +412,7 @@ public class IntroToAlphas extends javax.swing.JFrame {
         );
 
         letterlabel.setBackground(new java.awt.Color(255, 255, 255));
-        letterlabel.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 24));
+        letterlabel.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 24)); // NOI18N
         letterlabel.setForeground(new java.awt.Color(255, 102, 0));
         letterlabel.setToolTipText("alphabel will print");
         letterlabel.setAlignmentY(0.0F);
@@ -351,7 +421,7 @@ public class IntroToAlphas extends javax.swing.JFrame {
         letterlabel.setOpaque(true);
 
         wordlabel.setBackground(new java.awt.Color(255, 255, 0));
-        wordlabel.setFont(new java.awt.Font("Arial Unicode MS", 1, 48));
+        wordlabel.setFont(new java.awt.Font("Arial Unicode MS", 1, 48)); // NOI18N
         wordlabel.setForeground(new java.awt.Color(255, 0, 51));
         wordlabel.setToolTipText("will show the respective word");
         wordlabel.setBorder(new javax.swing.border.MatteBorder(null));
@@ -367,18 +437,23 @@ public class IntroToAlphas extends javax.swing.JFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(letterlabel, javax.swing.GroupLayout.PREFERRED_SIZE, 419, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(wordlabel, javax.swing.GroupLayout.DEFAULT_SIZE, 419, Short.MAX_VALUE))
+                    .addComponent(wordlabel, javax.swing.GroupLayout.PREFERRED_SIZE, 443, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(letterlabel, javax.swing.GroupLayout.PREFERRED_SIZE, 439, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(imagelabel, javax.swing.GroupLayout.PREFERRED_SIZE, 466, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(imagelabel, javax.swing.GroupLayout.PREFERRED_SIZE, 420, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addComponent(letterlabel, javax.swing.GroupLayout.DEFAULT_SIZE, 251, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(wordlabel, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addComponent(imagelabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 312, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(imagelabel, javax.swing.GroupLayout.PREFERRED_SIZE, 312, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(letterlabel, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(wordlabel, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -388,7 +463,7 @@ public class IntroToAlphas extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(1521, Short.MAX_VALUE))
+                .addContainerGap(1533, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -489,23 +564,59 @@ public class IntroToAlphas extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
 private void KWordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KWordActionPerformed
-// TODO add your handling code here:
+ImageIcon ic21=new ImageIcon("D:\\Ash\\PROJECT\\images\\Kitten1.jpeg");
+ ImageIcon ic22=new ImageIcon("D:\\Ash\\PROJECT\\images\\Letter\\K.jpeg");
+wordlabel.setText("         Kitten   ");
+ Image image21=ic21.getImage().getScaledInstance(imagelabel.getWidth(),imagelabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ Image image22=ic22.getImage().getScaledInstance(letterlabel.getWidth(),letterlabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ ImageIcon icon21=new ImageIcon(image21);
+ ImageIcon icon22=new ImageIcon(image22);
+ imagelabel.setIcon(icon21);
+ letterlabel.setIcon(icon22);
+    // TODO add your handling code here:
 }//GEN-LAST:event_KWordActionPerformed
 
 private void JWordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JWordActionPerformed
-// TODO add your handling code here:
+ImageIcon ic19=new ImageIcon("D:\\Ash\\PROJECT\\images\\jerry.jpeg");
+ ImageIcon ic20=new ImageIcon("D:\\Ash\\PROJECT\\images\\Letter\\J.jpeg");
+wordlabel.setText("     Jerry       ");
+ Image image19=ic19.getImage().getScaledInstance(imagelabel.getWidth(),imagelabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ Image image20=ic20.getImage().getScaledInstance(letterlabel.getWidth(),letterlabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ ImageIcon icon19=new ImageIcon(image19);
+ ImageIcon icon20=new ImageIcon(image20);
+ imagelabel.setIcon(icon19);
+ letterlabel.setIcon(icon20);
+    // TODO add your handling code here:
 }//GEN-LAST:event_JWordActionPerformed
 
 private void IWordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IWordActionPerformed
-// TODO add your handling code here:
+ImageIcon ic17=new ImageIcon("D:\\Ash\\PROJECT\\images\\Ice-cream.jpeg");
+ ImageIcon ic18=new ImageIcon("D:\\Ash\\PROJECT\\images\\Letter\\I.jpeg");
+wordlabel.setText("         ICE-Cream   ");
+ Image image17=ic17.getImage().getScaledInstance(imagelabel.getWidth(),imagelabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ Image image18=ic18.getImage().getScaledInstance(letterlabel.getWidth(),letterlabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ ImageIcon icon17=new ImageIcon(image17);
+ ImageIcon icon18=new ImageIcon(image18);
+ imagelabel.setIcon(icon17);
+ letterlabel.setIcon(icon18);
+    // TODO add your handling code here:
 }//GEN-LAST:event_IWordActionPerformed
 
 private void GWordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GWordActionPerformed
-// TODO add your handling code here:
+ImageIcon ic13=new ImageIcon("D:\\Ash\\PROJECT\\images\\goat.jpeg");
+ ImageIcon ic14=new ImageIcon("D:\\Ash\\PROJECT\\images\\Letter\\G.jpeg");
+wordlabel.setText("         GOAT   ");
+ Image image13=ic13.getImage().getScaledInstance(imagelabel.getWidth(),imagelabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ Image image14=ic14.getImage().getScaledInstance(letterlabel.getWidth(),letterlabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ ImageIcon icon13=new ImageIcon(image13);
+ ImageIcon icon14=new ImageIcon(image14);
+ imagelabel.setIcon(icon13);
+ letterlabel.setIcon(icon14);
+    // TODO add your handling code here:
 }//GEN-LAST:event_GWordActionPerformed
 
 private void speechActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_speechActionPerformed
-String inputString=wordlabel.getText();
+/*String inputString=wordlabel.getText();
 String[] words=inputString.split("");
 for(String word : words)
 {
@@ -526,7 +637,7 @@ for(String word : words)
 		    } catch (InterruptedException e) {
     }
 	
-}
+}*/
     
     // TODO add your handling code here:
 }//GEN-LAST:event_speechActionPerformed
@@ -581,13 +692,22 @@ ImageIcon ic11=new ImageIcon("D:\\Ash\\PROJECT\\images\\frog.jpeg");
 }//GEN-LAST:event_FWordActionPerformed
 
 private void backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backActionPerformed
-//new IntroToAlphas().setVisible(false);
+    setVisible(false);
     new Learning().setVisible(true);
     // TODO add your handling code here:
 }//GEN-LAST:event_backActionPerformed
 
 private void RWordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RWordActionPerformed
-// TODO add your handling code here:
+ImageIcon ic35=new ImageIcon("D:\\Ash\\PROJECT\\images\\Rose.jpeg");
+ ImageIcon ic36=new ImageIcon("D:\\Ash\\PROJECT\\images\\Letter\\R.jpeg");
+wordlabel.setText("         Rose   ");
+ Image image35=ic35.getImage().getScaledInstance(imagelabel.getWidth(),imagelabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ Image image36=ic36.getImage().getScaledInstance(letterlabel.getWidth(),letterlabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ ImageIcon icon35=new ImageIcon(image35);
+ ImageIcon icon36=new ImageIcon(image36);
+ imagelabel.setIcon(icon35);
+ letterlabel.setIcon(icon36);
+    // TODO add your handling code here:
 }//GEN-LAST:event_RWordActionPerformed
 
 private void CWordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CWordActionPerformed
@@ -630,6 +750,187 @@ letterlabel.setIcon(icon10);
     // TODO add your handling code here:
 }//GEN-LAST:event_EWordActionPerformed
 
+private void HWordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HWordActionPerformed
+ImageIcon ic15=new ImageIcon("D:\\Ash\\PROJECT\\images\\hammer.jpeg");
+ ImageIcon ic16=new ImageIcon("D:\\Ash\\PROJECT\\images\\Letter\\H.jpeg");
+wordlabel.setText("         Hammer   ");
+ Image image15=ic15.getImage().getScaledInstance(imagelabel.getWidth(),imagelabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ Image image16=ic16.getImage().getScaledInstance(letterlabel.getWidth(),letterlabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ ImageIcon icon15=new ImageIcon(image15);
+ ImageIcon icon16=new ImageIcon(image16);
+ imagelabel.setIcon(icon15);
+ letterlabel.setIcon(icon16);
+    // TODO add your handling code here:
+}//GEN-LAST:event_HWordActionPerformed
+
+private void LWordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LWordActionPerformed
+ImageIcon ic23=new ImageIcon("D:\\Ash\\PROJECT\\images\\lion.jpeg");
+ ImageIcon ic24=new ImageIcon("D:\\Ash\\PROJECT\\images\\Letter\\L.jpeg");
+wordlabel.setText("         Lion   ");
+ Image image23=ic23.getImage().getScaledInstance(imagelabel.getWidth(),imagelabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ Image image24=ic24.getImage().getScaledInstance(letterlabel.getWidth(),letterlabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ ImageIcon icon23=new ImageIcon(image23);
+ ImageIcon icon24=new ImageIcon(image24);
+ imagelabel.setIcon(icon23);
+ letterlabel.setIcon(icon24);
+    // TODO add your handling code here:
+}//GEN-LAST:event_LWordActionPerformed
+
+private void OWordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OWordActionPerformed
+ImageIcon ic29=new ImageIcon("D:\\Ash\\PROJECT\\images\\owl.jpeg");
+ ImageIcon ic30=new ImageIcon("D:\\Ash\\PROJECT\\images\\Letter\\O.jpeg");
+wordlabel.setText("         Kitten   ");
+ Image image29=ic29.getImage().getScaledInstance(imagelabel.getWidth(),imagelabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ Image image30=ic30.getImage().getScaledInstance(letterlabel.getWidth(),letterlabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ ImageIcon icon29=new ImageIcon(image29);
+ ImageIcon icon30=new ImageIcon(image30);
+ imagelabel.setIcon(icon29);
+ letterlabel.setIcon(icon30);// TODO add your handling code here:
+}//GEN-LAST:event_OWordActionPerformed
+
+private void MWordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MWordActionPerformed
+ImageIcon ic25=new ImageIcon("D:\\Ash\\PROJECT\\images\\mickey mouse.jpeg");
+ ImageIcon ic26=new ImageIcon("D:\\Ash\\PROJECT\\images\\Letter\\M.jpeg");
+wordlabel.setText("         Mickey Mouse   ");
+ Image image25=ic25.getImage().getScaledInstance(imagelabel.getWidth(),imagelabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ Image image26=ic26.getImage().getScaledInstance(letterlabel.getWidth(),letterlabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ ImageIcon icon25=new ImageIcon(image25);
+ ImageIcon icon26=new ImageIcon(image26);
+ imagelabel.setIcon(icon25);
+ letterlabel.setIcon(icon26);
+    // TODO add your handling code here:
+}//GEN-LAST:event_MWordActionPerformed
+
+private void PWordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PWordActionPerformed
+
+    ImageIcon ic31=new ImageIcon("D:\\Ash\\PROJECT\\images\\parrot.jpeg");
+ ImageIcon ic32=new ImageIcon("D:\\Ash\\PROJECT\\images\\Letter\\P.jpeg");
+wordlabel.setText("         Parrot   ");
+ Image image31=ic31.getImage().getScaledInstance(imagelabel.getWidth(),imagelabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ Image image32=ic32.getImage().getScaledInstance(letterlabel.getWidth(),letterlabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ ImageIcon icon31=new ImageIcon(image31);
+ ImageIcon icon32=new ImageIcon(image32);
+ imagelabel.setIcon(icon31);
+ letterlabel.setIcon(icon32);// TODO add your handling code here:
+}//GEN-LAST:event_PWordActionPerformed
+
+private void QWordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QWordActionPerformed
+ImageIcon ic33=new ImageIcon("D:\\Ash\\PROJECT\\images\\queen.jpeg");
+ ImageIcon ic34=new ImageIcon("D:\\Ash\\PROJECT\\images\\Letter\\Q.jpeg");
+wordlabel.setText("         Queen   ");
+ Image image33=ic33.getImage().getScaledInstance(imagelabel.getWidth(),imagelabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ Image image34=ic34.getImage().getScaledInstance(letterlabel.getWidth(),letterlabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ ImageIcon icon33=new ImageIcon(image33);
+ ImageIcon icon34=new ImageIcon(image34);
+ imagelabel.setIcon(icon33);
+ letterlabel.setIcon(icon34);
+    // TODO add your handling code here:
+}//GEN-LAST:event_QWordActionPerformed
+
+private void UActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UActionPerformed
+ImageIcon ic37=new ImageIcon("D:\\Ash\\PROJECT\\images\\umbrella.jpeg");
+ ImageIcon ic38=new ImageIcon("D:\\Ash\\PROJECT\\images\\Letter\\U.jpeg");
+wordlabel.setText("         Umbrella   ");
+ Image image37=ic37.getImage().getScaledInstance(imagelabel.getWidth(),imagelabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ Image image38=ic38.getImage().getScaledInstance(letterlabel.getWidth(),letterlabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ ImageIcon icon37=new ImageIcon(image37);
+ ImageIcon icon38=new ImageIcon(image38);
+ imagelabel.setIcon(icon37);
+ letterlabel.setIcon(icon38);
+    // TODO add your handling code here:
+}//GEN-LAST:event_UActionPerformed
+
+private void XActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_XActionPerformed
+ImageIcon ic43=new ImageIcon("D:\\Ash\\PROJECT\\images\\x-ray.jpeg");
+ ImageIcon ic44=new ImageIcon("D:\\Ash\\PROJECT\\images\\Letter\\X.jpeg");
+wordlabel.setText("         X-Ray   ");
+ Image image43=ic43.getImage().getScaledInstance(imagelabel.getWidth(),imagelabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ Image image44=ic44.getImage().getScaledInstance(letterlabel.getWidth(),letterlabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ ImageIcon icon43=new ImageIcon(image43);
+ ImageIcon icon44=new ImageIcon(image44);
+ imagelabel.setIcon(icon43);
+ letterlabel.setIcon(icon44);
+    // TODO add your handling code here:
+}//GEN-LAST:event_XActionPerformed
+
+private void YActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_YActionPerformed
+ImageIcon ic45=new ImageIcon("D:\\Ash\\PROJECT\\images\\yak.jpeg");
+ ImageIcon ic46=new ImageIcon("D:\\Ash\\PROJECT\\images\\Letter\\Y.jpeg");
+wordlabel.setText("         Yak   ");
+ Image image45=ic45.getImage().getScaledInstance(imagelabel.getWidth(),imagelabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ Image image46=ic46.getImage().getScaledInstance(letterlabel.getWidth(),letterlabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ ImageIcon icon45=new ImageIcon(image45);
+ ImageIcon icon46=new ImageIcon(image46);
+ imagelabel.setIcon(icon45);
+ letterlabel.setIcon(icon46);
+    // TODO add your handling code here:
+}//GEN-LAST:event_YActionPerformed
+
+private void ZActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ZActionPerformed
+ImageIcon ic47=new ImageIcon("D:\\Ash\\PROJECT\\images\\zebra.jpeg");
+ ImageIcon ic48=new ImageIcon("D:\\Ash\\PROJECT\\images\\Letter\\Z.jpeg");
+wordlabel.setText("         Zebra   ");
+ Image image47=ic47.getImage().getScaledInstance(imagelabel.getWidth(),imagelabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ Image image48=ic48.getImage().getScaledInstance(letterlabel.getWidth(),letterlabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ ImageIcon icon47=new ImageIcon(image47);
+ ImageIcon icon48=new ImageIcon(image48);
+ imagelabel.setIcon(icon47);
+ letterlabel.setIcon(icon48);
+    // TODO add your handling code here:
+}//GEN-LAST:event_ZActionPerformed
+
+private void WActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_WActionPerformed
+ImageIcon ic49=new ImageIcon("D:\\Ash\\PROJECT\\images\\well.jpeg");
+ ImageIcon ic50=new ImageIcon("D:\\Ash\\PROJECT\\images\\Letter\\W.jpeg");
+ wordlabel.setText("         Well   ");
+ Image image49=ic49.getImage().getScaledInstance(imagelabel.getWidth(),imagelabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ Image image50=ic50.getImage().getScaledInstance(letterlabel.getWidth(),letterlabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ ImageIcon icon49=new ImageIcon(image49);
+ ImageIcon icon50=new ImageIcon(image50);
+ imagelabel.setIcon(icon49);
+ letterlabel.setIcon(icon50);
+    // TODO add your handling code here:
+}//GEN-LAST:event_WActionPerformed
+
+private void TActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TActionPerformed
+ImageIcon ic37=new ImageIcon("D:\\Ash\\PROJECT\\images\\tiger.jpeg");
+ ImageIcon ic38=new ImageIcon("D:\\Ash\\PROJECT\\images\\Letter\\T.jpeg");
+wordlabel.setText("         Tiger   ");
+ Image image37=ic37.getImage().getScaledInstance(imagelabel.getWidth(),imagelabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ Image image38=ic38.getImage().getScaledInstance(letterlabel.getWidth(),letterlabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ ImageIcon icon37=new ImageIcon(image37);
+ ImageIcon icon38=new ImageIcon(image38);
+ imagelabel.setIcon(icon37);
+ letterlabel.setIcon(icon38);
+    // TODO add your handling code here:
+}//GEN-LAST:event_TActionPerformed
+
+private void SActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SActionPerformed
+ImageIcon ic51=new ImageIcon("D:\\Ash\\PROJECT\\images\\sun.jpeg");
+ ImageIcon ic52=new ImageIcon("D:\\Ash\\PROJECT\\images\\Letter\\S.jpeg");
+wordlabel.setText("         Sun   ");
+ Image image51=ic51.getImage().getScaledInstance(imagelabel.getWidth(),imagelabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ Image image52=ic52.getImage().getScaledInstance(letterlabel.getWidth(),letterlabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ ImageIcon icon51=new ImageIcon(image51);
+ ImageIcon icon52=new ImageIcon(image52);
+ imagelabel.setIcon(icon51);
+ letterlabel.setIcon(icon52);
+    // TODO add your handling code here:
+}//GEN-LAST:event_SActionPerformed
+
+private void VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VActionPerformed
+ImageIcon ic53=new ImageIcon("D:\\Ash\\PROJECT\\images\\vehicle.jpeg");
+ ImageIcon ic54=new ImageIcon("D:\\Ash\\PROJECT\\images\\Letter\\V.jpeg");
+wordlabel.setText("         Vehicle   ");
+ Image image53=ic53.getImage().getScaledInstance(imagelabel.getWidth(),imagelabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ Image image54=ic54.getImage().getScaledInstance(letterlabel.getWidth(),letterlabel.getHeight(),Image.SCALE_AREA_AVERAGING);
+ ImageIcon icon53=new ImageIcon(image53);
+ ImageIcon icon54=new ImageIcon(image54);
+ imagelabel.setIcon(icon53);
+ letterlabel.setIcon(icon54);
+    // TODO add your handling code here:
+}//GEN-LAST:event_VActionPerformed
+
     /**
     * @param args the command line arguments
     */
@@ -660,17 +961,17 @@ letterlabel.setIcon(icon10);
     private javax.swing.JButton PWord;
     private javax.swing.JButton QWord;
     private javax.swing.JButton RWord;
+    private javax.swing.JButton S;
+    private javax.swing.JButton T;
+    private javax.swing.JButton U;
+    private javax.swing.JButton V;
+    private javax.swing.JButton W;
+    private javax.swing.JButton X;
+    private javax.swing.JButton Y;
+    private javax.swing.JButton Z;
     private javax.swing.JButton back;
     private javax.swing.JButton exit;
     private javax.swing.JLabel imagelabel;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton23;
-    private javax.swing.JButton jButton24;
-    private javax.swing.JButton jButton25;
-    private javax.swing.JButton jButton26;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
