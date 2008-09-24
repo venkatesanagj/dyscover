@@ -53,13 +53,13 @@ public class PronunciationEditor extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         WordL.setFont(new java.awt.Font("Monotype Corsiva", 1, 18)); // NOI18N
-        WordL.setText(org.openide.util.NbBundle.getMessage(PronunciationEditor.class, "PronunciationEditor.WordL.text")); // NOI18N
+        WordL.setText(org.openide.util.NbBundle.getMessage(PronunciationEditor.class, "LABEL_WORD")); // NOI18N
 
         PronunciationL.setFont(new java.awt.Font("Monotype Corsiva", 1, 18)); // NOI18N
-        PronunciationL.setText(org.openide.util.NbBundle.getMessage(PronunciationEditor.class, "PronunciationEditor.PronunciationL.text")); // NOI18N
+        PronunciationL.setText(org.openide.util.NbBundle.getMessage(PronunciationEditor.class, "LABEL_PRON")); // NOI18N
 
         SynonymusL.setFont(new java.awt.Font("Monotype Corsiva", 1, 18)); // NOI18N
-        SynonymusL.setText(org.openide.util.NbBundle.getMessage(PronunciationEditor.class, "PronunciationEditor.SynonymusL.text")); // NOI18N
+        SynonymusL.setText(org.openide.util.NbBundle.getMessage(PronunciationEditor.class, "LABL_SYN")); // NOI18N
 
         SynT.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -68,16 +68,16 @@ public class PronunciationEditor extends javax.swing.JFrame {
         });
 
         jButton1.setFont(new java.awt.Font("Monotype Corsiva", 1, 18)); // NOI18N
-        jButton1.setText(org.openide.util.NbBundle.getMessage(PronunciationEditor.class, "PronunciationEditor.jButton1.text")); // NOI18N
+        jButton1.setText(org.openide.util.NbBundle.getMessage(PronunciationEditor.class, "BUTTON_TEST")); // NOI18N
 
         jButton2.setFont(new java.awt.Font("Monotype Corsiva", 1, 18)); // NOI18N
-        jButton2.setText(org.openide.util.NbBundle.getMessage(PronunciationEditor.class, "PronunciationEditor.jButton2.text")); // NOI18N
+        jButton2.setText(org.openide.util.NbBundle.getMessage(PronunciationEditor.class, "BUTTON_NEW")); // NOI18N
 
         jButton3.setFont(new java.awt.Font("Monotype Corsiva", 1, 18)); // NOI18N
-        jButton3.setText(org.openide.util.NbBundle.getMessage(PronunciationEditor.class, "PronunciationEditor.jButton3.text")); // NOI18N
+        jButton3.setText(org.openide.util.NbBundle.getMessage(PronunciationEditor.class, "BUTTON_APPLY")); // NOI18N
 
         jButton4.setFont(new java.awt.Font("Monotype Corsiva", 1, 18)); // NOI18N
-        jButton4.setText(org.openide.util.NbBundle.getMessage(PronunciationEditor.class, "PronunciationEditor.jButton4.text")); // NOI18N
+        jButton4.setText(org.openide.util.NbBundle.getMessage(PronunciationEditor.class, "BUTTON_DONE")); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
