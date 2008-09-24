@@ -303,7 +303,7 @@ try {
 }//GEN-LAST:event_EditRedoActionPerformed
 private void OptionPEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OptionPEActionPerformed
 setVisible(false);
-//new PronunciationEditor().setVisible(true);// TODO add your handling code here:
+new PronunciationEditor().setVisible(true);// TODO add your handling code here:
 }//GEN-LAST:event_OptionPEActionPerformed
 private void EditCutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EditCutActionPerformed
 TextArea.cut();
