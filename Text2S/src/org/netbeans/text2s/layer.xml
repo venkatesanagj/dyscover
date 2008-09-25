@@ -1,4 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.1//EN" "http://www.netbeans.org/dtds/filesystem-1_1.dtd">
 <filesystem>
+    <folder name="Actions">
+        <folder name="Edit">
+            <file name="org-netbeans-text2s-CopyAction.instance"/>
+            <file name="org-netbeans-text2s-CutAction.instance"/>
+            <file name="org-netbeans-text2s-OpenFileAction.instance"/>
+            <file name="org-netbeans-text2s-PasteAction.instance"/>
+            <file name="org-netbeans-text2s-RedoAction.instance"/>
+            <file name="org-netbeans-text2s-SelectAllAction.instance"/>
+            <file name="org-netbeans-text2s-UndoAction.instance"/>
+        </folder>
+    </folder>
+    <folder name="Menu">
+        <folder name="Edit">
+            <file name="org-netbeans-text2s-CopyAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Edit/org-netbeans-text2s-CopyAction.instance"/>
+                <attr name="position" intvalue="-200"/>
+            </file>
+            <file name="org-netbeans-text2s-CutAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Edit/org-netbeans-text2s-CutAction.instance"/>
+                <attr name="position" intvalue="-100"/>
+            </file>
+            <file name="org-netbeans-text2s-PasteAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Edit/org-netbeans-text2s-PasteAction.instance"/>
+                <attr name="position" intvalue="-300"/>
+            </file>
+            <file name="org-netbeans-text2s-RedoAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Edit/org-netbeans-text2s-RedoAction.instance"/>
+                <attr name="position" intvalue="0"/>
+            </file>
+            <file name="org-netbeans-text2s-SelectAllAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Edit/org-netbeans-text2s-SelectAllAction.instance"/>
+                <attr name="position" intvalue="-400"/>
+            </file>
+            <file name="org-netbeans-text2s-UndoAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Edit/org-netbeans-text2s-UndoAction.instance"/>
+                <attr name="position" intvalue="100"/>
+            </file>
+        </folder>
+        <folder name="File">
+            <file name="org-netbeans-text2s-OpenFileAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Edit/org-netbeans-text2s-OpenFileAction.instance"/>
+                <attr name="position" intvalue="0"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Toolbars">
+        <folder name="Edit">
+            <file name="org-netbeans-text2s-CopyAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Edit/org-netbeans-text2s-CopyAction.instance"/>
+                <attr name="position" intvalue="-300"/>
+            </file>
+            <file name="org-netbeans-text2s-CutAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Edit/org-netbeans-text2s-CutAction.instance"/>
+                <attr name="position" intvalue="-200"/>
+            </file>
+            <file name="org-netbeans-text2s-PasteAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Edit/org-netbeans-text2s-PasteAction.instance"/>
+                <attr name="position" intvalue="-400"/>
+            </file>
+            <file name="org-netbeans-text2s-RedoAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Edit/org-netbeans-text2s-RedoAction.instance"/>
+                <attr name="position" intvalue="-100"/>
+            </file>
+            <file name="org-netbeans-text2s-SelectAllAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Edit/org-netbeans-text2s-SelectAllAction.instance"/>
+                <attr name="position" intvalue="-500"/>
+            </file>
+            <file name="org-netbeans-text2s-UndoAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Edit/org-netbeans-text2s-UndoAction.instance"/>
+                <attr name="position" intvalue="0"/>
+            </file>
+        </folder>
+        <folder name="File">
+            <file name="org-netbeans-text2s-OpenFileAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Edit/org-netbeans-text2s-OpenFileAction.instance"/>
+                <attr name="position" intvalue="0"/>
+            </file>
+        </folder>
+    </folder>
 </filesystem>
