@@ -76,6 +76,11 @@ public class WelcomePage extends javax.swing.JFrame {
         });
 
         Pause.setText(org.openide.util.NbBundle.getMessage(WelcomePage.class, "BUTTON_PAUSE")); // NOI18N
+        Pause.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PauseActionPerformed(evt);
+            }
+        });
 
         Clear.setText(org.openide.util.NbBundle.getMessage(WelcomePage.class, "BUTTON_CLEAR")); // NOI18N
         Clear.addActionListener(new java.awt.event.ActionListener() {
@@ -317,6 +322,10 @@ TextArea.paste();
 private void EditSelectAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EditSelectAllActionPerformed
 TextArea.selectAll();
 }//GEN-LAST:event_EditSelectAllActionPerformed
+
+private void PauseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PauseActionPerformed
+// TODO add your handling code here:
+}//GEN-LAST:event_PauseActionPerformed
 public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
