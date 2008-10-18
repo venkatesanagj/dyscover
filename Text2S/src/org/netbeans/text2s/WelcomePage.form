@@ -232,6 +232,9 @@
           <ResourceString bundle="org/netbeans/text2s/Bundle.properties" key="BUTTON_PAUSE" replaceFormat="org.openide.util.NbBundle.getMessage({sourceFileName}.class, &quot;{key}&quot;)"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PauseActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="Clear">
       <Properties>

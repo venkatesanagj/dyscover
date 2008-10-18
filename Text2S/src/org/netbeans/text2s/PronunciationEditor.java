@@ -176,7 +176,7 @@ private void SynTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:ev
     // End of variables declaration//GEN-END:variables
 
     private void initComponents() {
-        throw new UnsupportedOperationException("Not yet implemented");
+        throw new UnsupportedOperationException(java.util.ResourceBundle.getBundle("org/netbeans/text2s/Bundle").getString("Not_yet_implemented"));
     }
 
 }
