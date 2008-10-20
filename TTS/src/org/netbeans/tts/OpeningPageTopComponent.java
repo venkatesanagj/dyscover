@@ -1,17 +1,12 @@
-
-
 package org.netbeans.tts;
-
-import java.awt.TextArea;
 import java.io.Serializable;
-import javax.speech.synthesis.Voice;
 import org.openide.util.NbBundle;
 import org.openide.windows.TopComponent;
 import org.openide.windows.WindowManager;
 import com.sun.speech.freetts.VoiceManager;
 import java.util.logging.Logger;
 import javax.swing.undo.UndoManager;
-
+import com.sun.speech.freetts.Voice;
 /**
  * Top component which displays something.
  */
@@ -31,11 +26,11 @@ public class OpeningPageTopComponent extends TopComponent {
 
     private static final String PREFERRED_ID = java.util.ResourceBundle.getBundle("org/netbeans/tts/Bundle").getString("OpeningPageTopComponent");
 
-   public OpeningPageTopComponent() {
+private OpeningPageTopComponent() {
         initComponents();
         
-        setName(NbBundle.getMessage(OpeningPageTopComponent.class, java.util.ResourceBundle.getBundle("org/netbeans/tts/Bundle").getString("CTL_OpeningPageTopComponent")));
-   //     setToolTipText(NbBundle.getMessage(OpeningPageTopComponent.class, "HINT_OpeningPageTopComponent"java.util.ResourceBundle.getBundle("org/netbeans/tts/Bundle").getString("BUTTON_APPLY")));
+        setName(NbBundle.getMessage(OpeningPageTopComponent.class, "CTL_OpeningPageTopComponent"));
+ setToolTipText(NbBundle.getMessage(OpeningPageTopComponent.class, "HINT_OpeningPageTopComponent"));
 //        setIcon(Utilities.loadImage(ICON_PATH, true));
    }
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -124,7 +119,7 @@ String s1=playB.getText();
             }
 
                 private void speek() {
-                   str = new String(TextArea.getText());
+                   str = new String(textArea.getText());
                VoiceManager voiceManager = VoiceManager.getInstance();
                helloVoice = voiceManager.getVoice("kevin16");
         helloVoice.allocate();
@@ -222,6 +217,6 @@ textArea.setText("");
     }
 
     private void stop() {
-        throw new UnsupportedOperationException("Not yet implemented");
+        helloVoice.deallocate();
     }
 }
