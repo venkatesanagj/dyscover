@@ -14,13 +14,13 @@ import com.sun.speech.freetts.Voice;
  */
 public class OpeningPageTopComponent extends TopComponent {
 
-    private String Word;
-    private Object[] arr;
-    private Object cmd;
-    private Object selectionfc;
-    private UndoManager undo;
-    private Object clipboard;
-    private Object clipBoard;
+    public String Word;
+    public Object[] arr;
+    public Object cmd;
+    public Object selectionfc;
+    public UndoManager undo;
+    public Object clipboard;
+    public Object clipBoard;
     Voice helloVoice;
     String str;
     private static OpeningPageTopComponent instance;
@@ -28,7 +28,7 @@ public class OpeningPageTopComponent extends TopComponent {
 //    static final String ICON_PATH = "SET/PATH/TO/ICON/HERE";
     private static final String PREFERRED_ID = java.util.ResourceBundle.getBundle("org/netbeans/tts/Bundle").getString("OpeningPageTopComponent");
 
-    private OpeningPageTopComponent() {
+   public OpeningPageTopComponent() {
         initComponents();
 
         setName(NbBundle.getMessage(OpeningPageTopComponent.class, "CTL_OpeningPageTopComponent"));

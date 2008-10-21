@@ -11,7 +11,8 @@ import org.openide.util.actions.CallableSystemAction;
 public final class CutAction extends CallableSystemAction {
 
     public void performAction() {
-        // TODO implement action body
+     OpeningPageTopComponent op = new OpeningPageTopComponent();
+     textArea.cut();// TODO implement action body
     }
 
     public String getName() {

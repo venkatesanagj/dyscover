@@ -11,6 +11,8 @@ import org.openide.util.actions.CallableSystemAction;
 public final class RedoAction extends CallableSystemAction {
 
     public void performAction() {
+         OpeningPageTopComponent op = new OpeningPageTopComponent();
+         textArea.redo();
         // TODO implement action body
     }
 

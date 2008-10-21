@@ -3,7 +3,6 @@
  * and open the template in the editor.
  */
 package org.netbeans.tts;
-
 import org.openide.util.HelpCtx;
 import org.openide.util.NbBundle;
 import org.openide.util.actions.CallableSystemAction;
@@ -11,7 +10,9 @@ import org.openide.util.actions.CallableSystemAction;
 public final class CopyAction extends CallableSystemAction {
 
     public void performAction() {
-        // TODO implement action body
+        OpeningPageTopComponent op = new OpeningPageTopComponent();
+        textArea.copy();
+
     }
 
     public String getName() {

@@ -11,6 +11,7 @@ import org.openide.util.actions.CallableSystemAction;
 public final class PasteAction extends CallableSystemAction {
 
     public void performAction() {
+        textArea.paste();
         // TODO implement action body
     }
 
