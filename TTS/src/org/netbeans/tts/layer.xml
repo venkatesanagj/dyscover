@@ -5,6 +5,7 @@
         <folder name="Edit">
             <file name="org-netbeans-tts-CopyAction.instance"/>
             <file name="org-netbeans-tts-CutAction.instance"/>
+            <file name="org-netbeans-tts-OpenAction.instance"/>
             <file name="org-netbeans-tts-PasteAction.instance"/>
             <file name="org-netbeans-tts-RedoAction.instance"/>
             <file name="org-netbeans-tts-SelectAllAction.instance"/>
@@ -42,6 +43,12 @@
                 <attr name="originalFile" stringvalue="Actions/Edit/org-netbeans-tts-UndoAction.instance"/>
             </file>
         </folder>
+        <folder name="File">
+            <file name="org-netbeans-tts-OpenAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Edit/org-netbeans-tts-OpenAction.instance"/>
+                <attr name="position" intvalue="1300"/>
+            </file>
+        </folder>
         <folder name="Window">
             <file name="OpeningPageAction.shadow">
                 <attr name="originalFile" stringvalue="Actions/Window/org-netbeans-tts-OpeningPageAction.instance"/>
@@ -76,6 +83,12 @@
             <file name="org-netbeans-tts-UndoAction.shadow">
                 <attr name="originalFile" stringvalue="Actions/Edit/org-netbeans-tts-UndoAction.instance"/>
                 <attr name="position" intvalue="0"/>
+            </file>
+        </folder>
+        <folder name="File">
+            <file name="org-netbeans-tts-OpenAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Edit/org-netbeans-tts-OpenAction.instance"/>
+                <attr name="position" intvalue="300"/>
             </file>
         </folder>
     </folder>
