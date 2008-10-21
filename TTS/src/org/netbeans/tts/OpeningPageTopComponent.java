@@ -147,7 +147,7 @@ private void playBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
     } else if (s1.equals("STOP")) {
         playB.setText("PLAY");
         stop();
-    }// TODO add your handling code here:
+    }
 }//GEN-LAST:event_playBActionPerformed
 
 private void clearBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearBActionPerformed
