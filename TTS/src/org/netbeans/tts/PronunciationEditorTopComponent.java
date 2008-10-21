@@ -176,8 +176,8 @@ private void CaseSenseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
 }//GEN-LAST:event_CaseSenseActionPerformed
 
 private void DoneBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DoneBActionPerformed
-setVisible(false);
-new OpeningPageTopComponent.setVisible(true);
+//setVisible(false);
+//new OpeningPageTopComponent.setVisible(true);
 // TODO add your handling code here:
 }//GEN-LAST:event_DoneBActionPerformed
 
