@@ -2,7 +2,7 @@
 
 = Introduction =
 
-The Netbeans IDE is built using an opensource API called [http://platform.netbeans.org Netbeans Platform]. The API is the base on which the Netbeans IDE is developed and is available for others to avoid creating biolerplate code. The NetBeans Platform is a generic framework for Swing applications. It provides the "plumbing" that, before, every developer had to write themselves — the plumbing — saving state, connecting actions to menu items, toolbar items and keyboard shortcuts; window management, etc.
+The Netbeans IDE is built using an opensource API called [http://platform.netbeans.org Netbeans Platform]. The API is the base on which the Netbeans IDE is developed and is available for others to avoid creating biolerplate code. The [http://platform.netbeans.org/ Netbeans Platform] is a generic framework for Swing applications. It provides the "plumbing" that, before, every developer had to write themselves — the plumbing — saving state, connecting actions to menu items, toolbar items and keyboard shortcuts; window management, etc.
 
 
 = Details =
