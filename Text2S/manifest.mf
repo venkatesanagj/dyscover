@@ -1,6 +1,0 @@
-Manifest-Version: 1.0
-OpenIDE-Module: org.netbeans.text2s
-OpenIDE-Module-Layer: org/netbeans/text2s/layer.xml
-OpenIDE-Module-Localizing-Bundle: org/netbeans/text2s/Bundle.properties
-OpenIDE-Module-Specification-Version: 1.0
-
