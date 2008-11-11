@@ -1,5 +1,0 @@
-Manifest-Version: 1.0
-OpenIDE-Module: org.netbeans.learn1
-OpenIDE-Module-Localizing-Bundle: org/netbeans/learn1/Bundle.properties
-OpenIDE-Module-Specification-Version: 1.0
-
