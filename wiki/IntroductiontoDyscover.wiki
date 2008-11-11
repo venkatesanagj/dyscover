@@ -1,4 +1,4 @@
-Dyscover - An opensource software system to help children with learning disabilities
+#summary Dyscover - An opensource software system to help children with learning disabilities
 
 = Introduction =
 
