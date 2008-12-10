@@ -1,0 +1,21 @@
+*_Learning_For_User_Guide._*
+
+= Learning =
+
+* LEARNING * is the feature of * DYSCOVER * which is devloped to learn the alphabet and number.This applet is for all those kids around the world will help them with 
+learning disabilities to know the proper pronunciation of the words.It is for tiny 
+nursery tots and help them in learning the alphabets and numbers the fun way.This 
+feature will help to children to recognize the alphabet and number with its picture 
+and also get the word with proper pronunciation of that word.This is a place where 
+not only children also anyone can learn to make their letters and numbers.
+
+*_WORKING OF THE MODULE_*
+
+1. On the front page of the LEARNING,choose your option and hit the start button.
+
+2. The options for Recognition and Fill in the blanks for alphabet and number.
+
+3. By selecting Introduction option of Alphabet and Number the screen will introduce with the alphabet and number.In this page the user will select the button and with the alphabet and number.The user will select the button and the screen will display the alphabet/number with its picture and word.
+
+4. By selecting the Fill in the blanks option of Alphabet and Number the screen will display fill in the blanks for alphabet/number.The user will fill the correct alphabet/number.If all the filled alphabet/number are correct then will give voice "WOW" or if wrong then "WRONG".  
+    
