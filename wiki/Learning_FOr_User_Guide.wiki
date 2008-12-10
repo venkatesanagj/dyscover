@@ -1,4 +1,4 @@
-*Learning_For_User_Guide*
+*Learning_For_User_Guide
 
 = Learning =
 
