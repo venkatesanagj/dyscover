@@ -3,20 +3,20 @@
 
 = Introduction =
 
-      TTS(Text To Speech ) is one of the feature of Dyscover which is developed to convert the user entered text in the speech.This feature of Dyscover will help childrens with learning disabilities to know the proper pronuncition of the words that they have learnt in the "Learning" module of Dyscover.This feature can also be used to get the synonymus of the word entered by the user if available.
+      TTS (Text To Speech) is one of the features of Dyscover which is developed to convert the user entered text in the speech. This feature of Dyscover will help children’s with learning disabilities to know the proper pronunciation of the words that they have learned in the "Learning" module of Dyscover.This feature can also be used to get the synonyms of the word entered by the user if available.
 
-      With the help of TTS user can also develope his own set of words & its pronunciations through "Pronunciation Editor".For example, user can set pronunciation as "Limited" for word "ltd." so that whenever user enters ltd. the word will be pronunced as "Limited". With the help of this feature user can set most commolly used abbrevations pronuncitions easily.
+      With the help of TTS user can also develop his own set of words & its pronunciations through "Pronunciation Editor”. For example, user can set pronunciation as "Limited" for word "ltd." so that whenever user enters ltd. the word will be pronounced as "Limited". With the help of this feature user can set most commonly used abbreviations pronunciations easily.
 
 
 = _WORKING OF THE MODULE_ =
 
-  *  First the user will write some text(alphabet,word,sentence,paragraph etc.)in the text area.User can also import the document ie. stored on the computer form file menu "Open" button. The selected documents text contents will be displayed in the text area of the TTS module.
+    *  First the user will write some text (alphabet, word, sentence, paragraph etc.)in the text area. User can also import the document i.e. stored on the computer form file menu "Open" button. The selected documents text contents will be displayed in the text area of the TTS module.
   *  When user clicks on the PLAY button the text in the text area following the current position of the cursor is converted into the speech.
   *  As soon as user clicks on the PLAY button it gets changed to STOP button & can be used to stop the speech in between. When user clicks on STOP button the get changed back to PLAY button & performs same as mentioned above.
   *  The CLEAR button is used to clear the text in the text area as well as the synonymus.
   *  The UNDO menu from the EDIT menu is used to undo the recent changes.
   *  The REDO menu from the EDIT menu is used to redo the recent changes.
-  *  The CUT menu from the EDIT menu is used to cut the seleced text from text area.
+  *  The CUT menu from the EDIT menu is used to cut the selected text from text area.
   *  The COPY menu is used to copy the selected text.
   *  The PASTE menu is used to paste the copied text at the desired line in the text area.
   *  The SELECT ALL menu is used to select all text entered in the text area.
