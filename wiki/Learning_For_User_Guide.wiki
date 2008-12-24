@@ -19,13 +19,14 @@ Learning Overview
 
   _To start learning:_
   
-  1. Click any of the option button such as Introduction to alphabet or Fill in the blanks for alphabet or Introduction to Number or Fill in the blanks for Numbers.
-  
-  2. After selecting hit the start button.
-   
-  3. The Selected option will open the page.
+  1. Click any of the option button such as Introduction to alphabets  or Fill in the blanks for alphabets  or   Introduction to Numbers or Fill in the blanks  for Numbers.
  
-  4. If wants to exit the Learning then Click Exit.
+  2. After selecting hit the start button.
+
+  3. The Selected option will open the appropriate page.
+
+  4. To exit the Learning  Click Exit.
+
 
 
 
@@ -34,15 +35,16 @@ Learning Overview
   
    _To start Introduction to alphabet:_
   
-   1.  Click the alphabet button from A-Z.
-  
-   2.  After selecting the button for A-Z alphabet the corresponding alphabet and image with its word will display.
-  
-   3.  The selected button will speech the pronunciation for that word.
-  
-   4.  Then wants to go on the other page, and then get back to the Learning front page by selecting Back Button. Select other option for next page.
- 
-   5.  If wants to exit the Introduction to Alphabet then Click Exit.
+   1.  Click the alphabets button from A-Z.
+
+   2.  After selecting the button for A-Z alphabets the corresponding alphabets and image with its word will be displayed.
+   
+   3.  The selected button will  also  speech the pronunciation for that word.
+
+   4. To switch to another page ,go back to Learning’s  main page by selecting Back Button  and select another page.
+
+   5.  To exit Click Exit.
+
 
 
  
@@ -51,17 +53,19 @@ Learning Overview
   
   _To start Introduction to Number:_
   
-   1.  Click the Number button from 1-10.
- 
-   2.   After selecting the button for 1-10 numbers the corresponding number and image with its word will display.
+    1.  Click the Numbers button from 1-10.
+
+    2.   After selecting the button for 1-10 numbers, the corresponding numbers and image along with its word will be displayed.
   
-   3.   The selected button will speech the pronunciation for that word.
-  
-   4.   The 11-100 numbers will display by selecting Next button. The image and word will not display.
-  
-   5.   If wants to go on the Introduction to Alphabet the select ABC Button which will send to alphabet page.
-  
-   6.   Back Button will return you on the first Learning page. Select other option for next page. And Exit Button will close the application page.
+    3.   The selected button will also speech the pronunciation for that word.
+
+    4.   The 11-100 numbers will be displayed  by selecting Next button. The image and word will not be displayed.
+
+    5.   To switch to Alphabets page, select ABC button which will move you to Introduction to alphabets page.
+
+    6.   Back Button will return you on the first Learning page. Select  other option for next page. And Exit Button will close the application page.
+
+
 
 
 
@@ -71,16 +75,17 @@ Learning Overview
   
   _To start the fill in the blanks:_
   
-   1.	Fill the blank Textbox with the appropriate alphabet from A-Z  alphabet.
-  
-   2.	Then check whether the alphabet is correct or not by using Check Button.
-  
-   3.	Click the Next Button for Small alphabet (a-z) and then fill it.
-  
-   4.	Back Button will return you on the first Learning page. Select other option for next page. And Exit Button will close the application page.
+   1.	Fill the blank Textbox with the appropriate alphabets from A-Z  alphabet.
+   
+   2.	Then check whether the alphabet is correct  or  not by  using  Check Button.
+   
+   3.	Click the Next Button for Small alphabets(a-z) and then fill it.
+
+    4.	Back Button will return you on the first Learning page. Select  other option for next page. And Exit Button will close the application page.
    
    Note:-
-	First fill all the alphabet in the textbox then check all the alphabet. It will only check only after filling all the alphabets.
+	First  fill all the alphabets in the textbox then check  for all the alphabet. It will  check only after filling all the  alphabets.
+
 
 
   
@@ -89,11 +94,12 @@ Learning Overview
   
   _To start the fill in the blanks:_
   
-   1.	Fill the blank Textbox with the appropriate Number from 1-30 Numbers.
-
-   2.	Then check whether the Number is correct or not by using Check Button.
-
-   3.	Back Button will return you on the first Learning page. Select other option for next page. And Exit Button will close the application page.
+  
+   1.	Fill the blank Textbox with the appropriate Numbers from 1-30 Numbers.
+  
+   2.	Then check whether the Numbers entered are correct  or not by using  Check Button.
+ 
+   3.	Back Button will return you on the first Learning page. Select  other option for next page. And Exit Button will close the application page.
   
    Note:-
-	First fill all the Number in the textbox then check all the Number. It will only check only after filling all the number
+	First fill all the Numbers in the textbox then check all the Numbers. It will  check only after filling all the numbers.
