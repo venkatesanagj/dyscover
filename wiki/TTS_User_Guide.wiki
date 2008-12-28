@@ -1,7 +1,7 @@
 #labels TTS,TextToSpeech,UserGuide
 ==Help==
 
-  *  TTS overview :- http://code.google.com/p/dyscover/wiki/TTS_OverView
+  *  TTS overview :- [http://code.google.com/p/dyscover/wiki/TTS_OverView]
 
   *  To enter the sentences to be read :- http://code.google.com/p/dyscover/wiki/hepl_1
 
