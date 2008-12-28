@@ -1,0 +1,5 @@
+==To import the saved document on the computer to be read.==
+
+  #  On the *file*  menu, click on  *Open*.
+  #  Select the document to be imported from the browser.
+  #  Click on the *Select* button.
