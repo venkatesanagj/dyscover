@@ -1,4 +1,4 @@
 ==To undo & redo the recent changes.==
 
-  #  To undo the recent changes,go to *Edit* menu & click on *Undo*. 
-  #  To redo the recent changes,go to *Edit* menu & click on *Redo*.
+  #  To undo the recent changes, go to *Edit* menu & click on *Undo*. 
+  #  To redo the recent changes, go to *Edit* menu & click on *Redo*.
