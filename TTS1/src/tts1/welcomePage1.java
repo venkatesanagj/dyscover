@@ -9,18 +9,25 @@ import com.sun.speech.freetts.VoiceManager;
 
 import java.awt.Frame;
 import java.awt.GraphicsEnvironment;
+import java.awt.Image;
 import java.awt.Point;
 import java.awt.Rectangle;
 
+import java.awt.Toolkit;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.DataFlavor;
+import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.DataInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 
+import java.io.IOException;
 import java.lang.String;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
@@ -41,10 +48,11 @@ public class welcomePage1 extends javax.swing.JFrame implements HotkeyListener, 
 
     private static final Log LOG = LogFactory.getLog(welcomePage1.class);
     private static final int ALT_S = 88;
+    private static final int ALT_D=90;
     private static String Word;
     private static UndoManager undo;
     static Voice helloVoice;
-    static String str,  s1;
+    static String str,  s1,selected;
     private static String s2 = "";
     //   private Frame frame3;
 //    Clipboard cb = frame3.getToolkit().getSystemClipboard();
@@ -54,13 +62,14 @@ public class welcomePage1 extends javax.swing.JFrame implements HotkeyListener, 
         welcomePage1.setDefaultLookAndFeelDecorated(false);
      //   welcomePage1.RIGHT_ALIGNMENT(100.00);
         JIntellitype.getInstance().registerHotKey(ALT_S, JIntellitype.MOD_ALT, (int) 'S');
+        JIntellitype.getInstance().registerHotKey(ALT_D,JIntellitype.MOD_ALT,(int)'D');
         JIntellitype.getInstance().addHotKeyListener(this);
         JIntellitype.getInstance().addIntellitypeListener(this);
         try {
             UIManager.setLookAndFeel(new WindowsLookAndFeel());
         } catch (UnsupportedLookAndFeelException ex) {
             Logger.getLogger(welcomePage1.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        } 
         initComponents();
         LOG.info("Initializing UI");
         this.addWindowListener(new java.awt.event.WindowAdapter() {
@@ -152,6 +161,7 @@ public class welcomePage1 extends javax.swing.JFrame implements HotkeyListener, 
         textArea = new javax.swing.JTextArea();
         playB = new javax.swing.JButton();
         clearB = new javax.swing.JButton();
+        image = new javax.swing.JLabel();
         jMenuBar3 = new javax.swing.JMenuBar();
         File2 = new javax.swing.JMenu();
         fileOpen = new javax.swing.JMenuItem();
@@ -187,6 +197,9 @@ public class welcomePage1 extends javax.swing.JFrame implements HotkeyListener, 
                 clearBActionPerformed(evt);
             }
         });
+
+        image.setBackground(new java.awt.Color(153, 0, 153));
+        image.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         File2.setText("File");
         File2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -284,9 +297,11 @@ public class welcomePage1 extends javax.swing.JFrame implements HotkeyListener, 
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(14, 14, 14)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(clearB, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(playB, javax.swing.GroupLayout.DEFAULT_SIZE, 145, Short.MAX_VALUE))
+                    .addComponent(playB, javax.swing.GroupLayout.DEFAULT_SIZE, 71, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(image, javax.swing.GroupLayout.DEFAULT_SIZE, 164, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -294,14 +309,17 @@ public class welcomePage1 extends javax.swing.JFrame implements HotkeyListener, 
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 277, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 266, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(playB, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(clearB, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(38, 38, 38))))
+                        .addGap(47, 47, 47)
+                        .addComponent(playB, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(28, 28, 28)
+                        .addComponent(clearB, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(image, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(36, 36, 36)))
+                .addContainerGap())
         );
 
         pack();
@@ -387,7 +405,8 @@ private void editSelectAllEditSelectAllActionPerformed(java.awt.event.ActionEven
       //  textArea.setCaretPosition(0);
         s2 = "";
         s1 = playB.getText();
-        if (s1.equals("PLAY")) {
+
+              if (s1.equals("PLAY")) {
             playB.setText("STOP");
             Thread speakThread = new Thread(new Runnable() {
 
@@ -401,6 +420,36 @@ private void editSelectAllEditSelectAllActionPerformed(java.awt.event.ActionEven
             stop();
         }
     }
+     private void play1() {
+         Toolkit tk = Toolkit.getDefaultToolkit();
+        Clipboard cp = tk.getSystemClipboard();
+        try {
+             selected = (String)cp.getData(DataFlavor.stringFlavor);
+         //   System.out.println(str);
+        } catch (IOException ioex) {
+            ioex.printStackTrace();
+        } catch (UnsupportedFlavorException ex) {
+            Logger.getLogger(welcomePage1.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        speak1();
+    }
+      //  textArea.setCaretPosition(0);
+      /*  s2 = "";
+        s1 = playB.getText();
+        if (s1.equals("PLAY")) {
+            playB.setText("STOP");
+            Thread speakThread = new Thread(new Runnable() {
+
+                public void run() {
+                    speak();
+                }
+            });
+            speakThread.start();
+        } else if (s1.equals("STOP")) {
+            playB.setText("PLAY");
+            stop();
+        }*/
+    
 private void playBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_playBActionPerformed
     play();
 }//GEN-LAST:event_playBActionPerformed
@@ -434,6 +483,7 @@ private void clearBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:
     private javax.swing.JMenuItem editUndo;
     private javax.swing.JMenuItem fileExit;
     private javax.swing.JMenuItem fileOpen;
+    private javax.swing.JLabel image;
     private javax.swing.JMenuBar jMenuBar3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton playB;
@@ -442,6 +492,13 @@ private void clearBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:
 
     private void speak() {
         String s = textArea.getText();
+        String s5="images\\";
+        String s4=".jpeg";
+        String obj=s5+s+s4;
+        ImageIcon ic1=new ImageIcon(obj);
+  Image image1=ic1.getImage().getScaledInstance(image.getWidth(),image.getHeight(),Image.SCALE_AREA_AVERAGING);
+ ImageIcon icon1=new ImageIcon(image1);
+ image.setIcon(icon1);
         int i = textArea.getCaretPosition();
         int k = s.length();
         for (int j = i; j <= k - 1; j++) {
@@ -457,17 +514,30 @@ private void clearBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:
         playB.setText("PLAY");
     }
 
+    private void speak1() {
+       VoiceManager voiceManager = VoiceManager.getInstance();
+        helloVoice = voiceManager.getVoice("kevin16");
+        helloVoice.allocate();
+        helloVoice.speak(selected);
+        helloVoice.deallocate();
+        playB.setText("PLAY");
+        selected="";
+    }
+
     private void stop() {
         helloVoice.deallocate();
     }
 
     public void onHotKey(int aIdentifier) {
         output("message received");
-     //   play();
+       play1();
     }
 
     public void onIntellitype(int aCommand) {
         switch (aCommand) {
+            case 90:
+                stop();
+                break;
         }
     }
 
@@ -475,7 +545,7 @@ private void clearBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:
         if (LOG.isInfoEnabled()) {
             LOG.info(text);
         }
-        textArea.append(text);
-        textArea.append("\n");
+      //  textArea.append(text);
+      //  textArea.append("\n");
     }
 }
