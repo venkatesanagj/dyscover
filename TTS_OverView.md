@@ -1,0 +1,3 @@
+> TTS (Text To Speech) is one of the features of DYSCOVER which is developed to convert the user entered text in speech. This feature of Dyscover will help children’s with learning disabilities to know the proper pronunciation of the words that they have learned in the "Learning" module of DYSCOVER.This feature can also be used to get the synonyms of the word entered by the user if available.
+
+> With the help of TTS, user can also develop his own set of words & its pronunciations through "Pronunciation Editor”. For example, user can set pronunciation as "Limited" for word "ltd." so that whenever user enters "ltd." the word will be pronounced as "Limited". With the help of this feature user can set most commonly used abbreviations pronunciations easily.
